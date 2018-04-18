@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie ie9 no-js" lang="en"><![endif]-->
+<!--[if gt IE 9 | !IE]><!-->
+<html class="no-js" lang="en">
+	<!--<![endif]-->
+
+	<!-- Mirrored from demo.bonefishcode.com/flat-tech/demo/single-img/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Mar 2018 07:54:08 GMT -->
+	<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>CitZen- Hiring</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+		<link rel="icon" href="assets/img/citzen.png">
+		<link rel='stylesheet' href='assets/css/bootstrap.min.css'>
+		<link rel='stylesheet' href='assets/css/vendor.css'>
+		<link rel='stylesheet' href='assets/css/style.css'>
+		<link rel='stylesheet' href='assets/css/demo.css'>
+		<link rel='stylesheet' href='assets/css/custom.css'>
+		<!--[if lte IE 9]><!-->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MXQFGKP');</script>
+		<script src='assets/js/vendor/html5shiv.min.js'></script>
+		<!--<![endif]-->
+  
+		<style>
+		
+			.is-site-bg-img .site-bg-img
+			{
+				background-image: url(assets/img/header-img.jpg) !important;
+			}
+			.blue {
+				color: #068ACE;
+			}
+			.blue-border-bottom {
+				border-bottom: 1px solid #068ACE; 
+			}
+			.bb70{
+				width: 70px;
+			}
+			.bb90 {
+				width: 90px;
+			}
+			.bb180 {
+				width: 180px;
+			}
+		
+			@media (min-width: 992px)
+			{
+				.navbar-brand img 
+				{
+					max-height: 60px;
+				}
+			}
+			@media (min-width: 768px)
+			{
+				.navbar-right
+				{
+					margin-right: -20px;	
+				}
+			}
+        
+			.navbar-nav > li a
+			{
+				font-size: 12px !important;
+			}
+        
+        
+			.site-footer-social-list li
+			{
+				display: block;
+			}
+			.site-footer-social-list li:not(:first-child)
+			{
+				font-size: 12px !important;
+				font-weight: 500;
+			}
+			.site-footer-social-list li:first-child
+			{
+				text-decoration: underline;
+			}
+			.site-footer-social-list
+			{
+				text-align: left;
+			}
+			@media (min-width: 768px)
+			{
+				.footerRow .col-sm-2
+				{
+					width: 14%;
+				}
+         	
+			}
+			.navbar-nav.navbar-right li
+			{
+				margin-left: 5px;
+			}
+        
+			/* Team */
+			
+			
+			#team .column {
+				float: left;
+				width: 25% !important;
+				margin-bottom: 16px;
+				padding: 0 8px;
+			}
+
+			/* Display the columns below each other instead of side by side on small screens */
+			@media screen and (max-width: 650px) 
+			{
+				#team .column {
+					width: 100%;
+					display: block;
+				}
+			}
+
+			/* Add some shadows to create a card effect */
+			#team .card {
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			}
+
+			/* Some left and right padding inside the container */
+			#team .row .container {
+				padding: 0 16px;
+				width: 100% !important;
+			}
+
+			/* Clear floats */
+			#team .column .container::after, .row::after {
+				content: "";
+				clear: both;
+				display: table;
+			}
+
+			#team .title {
+				color: grey;
+				margin-bottom: 0px;
+			}
+
+			#team .button {
+				border: none;
+				outline: 0;
+				display: inline-block;
+				padding: 8px;
+				color: white;
+				background-color: #000;
+				text-align: center;
+				cursor: pointer;
+				/* width: 100%; */
+			
+			}
+
+			#team .button:hover {
+				background-color: #555;
+			}
+		
+			#team .column h2
+			{
+				font-size: 16px;
+				font-weight: 600;
+				margin-top: 6px;
+				margin-bottom: 0px !important;
+			}
+			#team .column .title
+			{
+				font-size: 12px;
+			}
+			#team button.btn-link
+			{
+				padding: 7px;
+			}
+            
+			/*  Card Flip  */
+                
+			.card-container {
+				cursor: pointer;
+				height: 350px;
+				perspective: 600;
+				position: relative;
+				width: 150px;
+			}
+			.card1 {
+				height: 100%;
+				position: absolute;
+				transform-style: preserve-3d;
+				transition: all 1s ease-in-out;
+				width: 100%;
+			}
+			.card1:hover {
+				transform: rotateY(180deg);
+			}
+			.card1 .side {
+				backface-visibility: hidden;
+				border-radius: 6px;
+				height: 100%;
+				position: absolute;
+				overflow: hidden;
+				width: 100%;
+			}
+			.card1 .back {
+				background: #eaeaed;
+				color: #0087cc;
+				line-height: 150px;
+				text-align: center;
+				transform: rotateY(180deg);
+			}
+			.jobcategories .job-heading
+			{
+				font-size: 18px;
+				font-weight: 600;
+				color: dimgrey;
+			}
+			.jobcategories .job-numbers
+			{
+				color: dimgrey;
+				margin-bottom: 0px;
+			}
+			.job-categories .col-sm-3
+			{
+				height: 260px;
+			}
+			.jobnumbershover
+			{
+				margin-bottom: 0px;
+				position: absolute;
+				color: white;
+				top: 83px;
+				left: 97px;
+				display: none;
+			}
+			.imagedisplay:hover img 
+			{
+				opacity: 0.4;
+			}
+            
+			.imagedisplay:hover .jobnumbershover 
+			{
+				display: block;
+			}
+			.imagedisplay:hover 
+			{
+				background-color: black;
+			}
+			
+			
+			#home 
+			{
+				height:550px;
+			}
+				
+			.otherPagesLink
+			{
+				background-color: rgba(255,255,255,0.09);
+    			line-height: 27px !important;
+			}
+			
+			@media (min-width: 992px){
+			#navbar-collapse .navbar-nav > li {
+			   float: right
+			}
+			
+			#navbarmobile
+			{
+				display: none !important;
+			}
+			
+			#navbar-largescreen
+			{
+				display: block !important;
+			}
+			
+			.otherPagesLink 
+			{
+			
+				position: absolute;
+				top: 0px;
+    			right: 0px;
+    			left: 0px;
+                width: 100%;
+			}
+			
+			}
+			@media (max-width: 991px)
+			{
+				.otherPageLink  {
+					float: none;
+					position: relative;
+					top: 0px;
+					left: 0px;
+					right: 0px;
+			    
+			}	
+			
+			#navbarmobile
+			{
+				display: block !important;
+			}
+			
+			#navbar-largescreen
+			{
+				display: none !important;
+			}
+			
+			}
+			.otherPagesLink a
+			{
+				font-weight: 700;
+			}
+			.navbar-right:not(.otherPagesLink)
+			{
+				margin-top: 38px;
+				
+			}
+			.navbar-right
+			{
+				line-height: 40px;
+			}
+			
+			footer
+			{
+				background-color: #068ACE !important;
+			}
+		</style>
+	</head>
+	<body>
+   	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXQFGKP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+		<div class="site">
+			<div class="site-loader">
+				<div class="site-loader-spinner"></div>
+			</div> <!-- .site-loader -->
+
+			<div id="demo" class="ccard">
+				<div class="ccard__block">
+					<ul class="ccard__ul _light" data-type="toggle">
+						<li>
+							<h4>MAP</h4>
+							<a class="_on" data-on="is-map" data-off="is-map-disable"></a>
+						</li>
+					</ul>
+				</div>
+				<a class="ccard__toggle" href="#">
+					<img src="assets/img/ccard_toggle.png" alt="">
+				</a>
+			</div> <!-- /demo -->
+
+			<div class="site-canvas">
+				<header class="site-header">
+					<nav class="navbar navbar-theme" id="navbar-largescreen">
+						<div class="container-fluid">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<div class="navbar-brand-wrap">
+									<a class="navbar-brand" href="#">
+										<img src="assets/img/logo2.png" alt="">
+									</a>
+								</div>
+							</div> <!-- .navbar-header -->
+							
+							
+							<div class="collapse navbar-collapse" id="navbar-collapse" style="display: none; !important">
+							
+							  <ul class="nav navbar-nav navbar-right otherPagesLink">	
+								
+								<li class="active"><a href="hiring.html">Join Our Team</a></li>
+								<li ><a href="about.html">About Us</a></li>
+								<li><a href="#Airdrop">Airdrop</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="ico.html">ICO</a></li>
+								<li><a href="javascript:;">CitZen Reward</a></li>
+								<li><a href="javascript:;">CitZen Community</a></li>
+								<li><a href="platformViableSegments.html">Platform Viable Segments</a></li>
+								<li><a href="index.html">CitZen</a></li>
+							</ul>
+							
+							
+							
+								<ul class="nav navbar-nav navbar-right">
+									
+									<li class="active"><a href="#home">Home</a></li>
+								</ul>
+								
+								
+								
+							</div> <!-- .navbar-collapse -->
+							
+							
+							
+							
+						</div>
+					</nav>
+					
+					
+					
+					<nav class="navbar navbar-theme" id="navbarmobile" >
+						<div class="container-fluid">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-collapse" aria-expanded="false">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<div class="navbar-brand-wrap">
+									<a class="navbar-brand" href="#">
+										<img src="assets/img/logo2.png" alt="">
+									</a>
+								</div>
+							</div> <!-- .navbar-header -->
+							
+							
+							
+							
+							<div class="collapse navbar-collapse " id="mobile-collapse">
+							
+							  <ul class="nav navbar-nav navbar-right otherPagesLink">	
+								
+								<li><a href="javascript:;">CitZen Community</a></li>
+								<li><a href="javascript:;">CitZen Reward</a></li>
+								<li><a href="ico.html">ICO</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="#Airdrop">Airdrop</a></li>
+								<li><a href="about.html">About Us</a></li>
+								<li><a href="hiring.html">Join Us</a></li>
+							</ul>
+							
+							
+							
+								<ul class="nav navbar-nav navbar-right">
+									
+									<li class="active"><a href="#home">Home</a></li>
+									<li><a href="#brief_1">Future Is Here</a></li>
+									<li><a href="#roadmap">Roadmap</a></li>
+									<li><a href="#download">Downloads</a></li>
+									
+								</ul>
+								
+								
+								
+							</div> <!-- .navbar-collapse -->
+						</div>
+					</nav>
+				</header> <!-- .site-header -->
+				<main class="site-main">
+				<div id="home" class="section block-primary position-r align-c-xs-max">
+						<div id="particles-js" class="site-bg">
+							<div class="site-bg-img"></div>
+							
+							<div class="site-bg-overlay" style="background-color: rgba(16, 128, 242, 0.9);"></div>
+							
+							
+						<canvas class="particles-js-canvas-el" width="1349" height="550" style="width: 100%; height: 100%;"></canvas></div> <!-- .site-bg -->
+
+						<div class="container">
+							<div class="row row-table">
+								<div class="col-sm-6">
+									<div class="col-inner" data-sr="left" data-sr-id="5" style="; visibility: visible;  -webkit-transform: translateX(0); opacity: 1;transform: translateX(0); opacity: 1;-webkit-transition: -webkit-transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; transition: transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; ">
+										<div class="section-heading">
+											<h5>Join Us</h5>
+											<h1>CitZen</h1>
+											<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum. A Lorem Ipsum egy egyszerû szövegrészlete, szövegutánzata a betûszedõ és nyomdaiparnak. 
+											</p>
+										</div> <!-- .section-heading -->
+										<div class="section-content">
+											
+										</div> <!-- .section-content -->
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-p-l-1 m-t-60-xs-max">
+									<div class="col-inner clearfix">
+			
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+  
+				
+				
+				
+				<div id="job-categories" class="section block-default align-c-xs-max">
+					<div class="container">
+						<div class="row row-table">
+							<div class="col-sm-12">
+								<div class="col-inner">
+									<div class="section-heading">
+										<h5>Career hunt</h5>
+										<div class="blue-border-bottom bb90"></div>
+										<h2>Join Your Dream Team?</h2>
+										<p>Our version of the great workplace is a dream team in pursuit of ambitious common goals, for which we spend heavily. It is on such a team that you learn the most, perform your best work, improve the fastest, accomplish the most, and have the most fun. See where you fit in.</p>
+									</div> <!-- .section-heading -->
+									<div class="section-content">
+									
+										<div class="row jobcategories">
+											<div class="col-sm-3">
+												<a href="jobslisting.html">
+											
+													<div class="imagedisplay">
+														<img src="https://images.ctfassets.net/i5wc420v2vd1/2SI7Su8k3mW2qMIKOo6C8s/2898e87ef0e99e963c63dd93186b77e3/OLIE2596__2_.jpg?w=350" style="width: 100%;">
+														<p class="jobnumbershover"> View 2 Jobs</p>
+													</div>
+											
+													<h4 class="job-heading">
+														Business Development
+													</h4>
+													<p class="job-numbers">
+														2 Jobs
+													</p>
+												</a>
+											
+											</div>
+											
+											
+											<div class="col-sm-3">
+											<a href="jobslisting.html">
+											
+													<div class="imagedisplay">
+														<img src="https://images.ctfassets.net/i5wc420v2vd1/4iaVJBvUoMIOy4Me2YsW2W/def882db0d3e837121812ebaf807fba4/OLIE2962.jpg?w=350" style="width: 100%;">
+														<p class="jobnumbershover"> View 88 Jobs</p>
+													</div>
+											
+													<h4 class="job-heading">
+														Content
+													</h4>
+													<p class="job-numbers">
+														88 Jobs
+													</p>
+												</a>
+											
+											</div>
+											
+											<div class="col-sm-3">
+											<a href="jobslisting.html">
+											
+													<div class="imagedisplay">
+														<img src="https://images.ctfassets.net/i5wc420v2vd1/1JUlyD8PDaKICIGIMISGiE/0f2bfdea824940d22d11ada6a9cac719/BW7A1733.jpg?w=350" style="width: 100%;">
+														<p class="jobnumbershover"> View 6 Jobs</p>
+													</div>
+											
+													<h4 class="job-heading">
+														Customer Service
+													</h4>
+													<p class="job-numbers">
+														6 Jobs
+													</p>
+											</a>
+											
+											</div>
+											
+											<div class="col-sm-3">
+											<a href="jobslisting.html">
+											
+													<div class="imagedisplay">
+														<img src="https://images.ctfassets.net/i5wc420v2vd1/1i3kbkmYaYgoGEEW22oCwM/a57eab5eca11773727186c60dfb5f6d4/OLIE1331.jpg?w=350" style="width: 100%;">
+														<p class="jobnumbershover"> View 6 Jobs</p>
+													</div>
+											
+													<h4 class="job-heading">
+														Data, Analytics, and Algorithms
+													</h4>
+													<p class="job-numbers">
+														6 Jobs
+													</p>
+											</a>
+											
+											</div>
+											
+											
+											<div class="col-sm-3">
+											<a href="jobslisting.html">
+											
+													<div class="imagedisplay">
+														<img src="https://images.ctfassets.net/i5wc420v2vd1/4xfR8gpP9e0moSkm0QoqAu/b0829b20dc8c085f34099d8e6d616497/MH_Netflix_Hackathon17_081817_0155.jpg?w=350" style="width: 100%;">
+														<p class="jobnumbershover"> View 22 Jobs</p>
+													</div>
+											
+													<h4 class="job-heading">
+														Engineering
+													</h4>
+													<p class="job-numbers">
+														22 Jobs
+													</p>
+											</a>
+											
+											</div>
+											
+											
+										</div>
+									</div> <!-- .section-content -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> <!-- #brief_3 -->
+				
+				</main><!-- .site-main -->
+				<footer class="site-footer block-invert" style="background-color:#099de6;">
+					<div class="container">
+						<img class="site-footer-logo img-responsive" src="assets/img/logo1.png" data-sr="bottom" data-sr-id="2" style="; visibility: visible;  -webkit-transform: translateY(0); opacity: 1;transform: translateY(0); opacity: 1;-webkit-transition: -webkit-transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; transition: transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; ">
+						<div class="row footerRow">
+							<div class="col-sm-3">
+								<ul class="site-footer-social-list">
+									<li><a href="javascript:;">Platform Viable Segments</a></li>	
+									<li><a href="javascript:;">CitZen</a></li>
+									<li><a href="javascript:;">Governments</a></li>
+									<li><a href="javascript:;">Businesses</a></li>
+									<li><a href="javascript:;">condominiums</a></li>
+									<!--
+									<li style="padding-left: 10px;line-height: 13px;"><a href="javascript:;" style="font-size: 10px;">Vertical Viable Segment</a></li>
+									
+									<li style=" padding-left: 27px;"><a href="javascript:;" style="font-size: 10px;">WeServ</a></li>
+									-->
+									
+									
+				
+								</ul>
+							</div>
+						
+							<div class="col-sm-3">
+								<ul class="site-footer-social-list">
+									<li><a href="javascript:;">Solution</a></li>	
+									<li><a href="javascript:;">Ecommerce Solution</a></li>
+									<li><a href="javascript:;">Business Solution</a></li>
+								</ul>
+							</div>
+						
+							<div class="col-sm-3">
+								<ul class="site-footer-social-list">
+									<li><a href="javascript:;">Use Case</a></li>	
+									<li><a href="javascript:;">ABC</a></li>
+									<li><a href="javascript:;">DEF</a></li>
+									<li><a href="javascript:;">XYZ</a></li>
+								</ul>
+							</div>
+						
+							<div class="col-sm-3">
+								<ul class="site-footer-social-list">
+									<li><a href="javascript:;">Technology</a></li>	
+									<li><a href="javascript:;">ABC</a></li>
+									<li><a href="javascript:;">DEF</a></li>
+									<li><a href="javascript:;">XYZ</a></li>
+								</ul>
+							</div>
+							<div class="clearfix"></div>
+							<br>
+						
+							<div class="col-sm-3">
+								<ul class="site-footer-social-list">
+									<li><a href="javascript:;">Legal</a></li>	
+									<li><a href="javascript:;">Customer Agreement</a></li>
+									<li><a href="javascript:;">Terms &amp; Conditions</a></li>
+									<li><a href="javascript:;">Privacy Policy</a></li>
+									<li><a href="javascript:;">Eula</a></li>
+								</ul>
+							</div>
+							
+							<div class="col-sm-3">
+								<ul class="site-footer-social-list">
+									<li><a href="javascript:;">CitZen</a></li>
+									<li><a href="javascript:;">About Us</a></li>	
+									<li><a href="javascript:;">Join Us</a></li>
+									<li><a href="javascript:;">Team</a></li>
+									<li><a href="javascript:;">Blog</a></li>
+									<li><a href="javascript:;">Press</a></li>
+								</ul>
+							</div>
+							
+							<div class="col-sm-3">
+								<ul class="site-footer-social-list">
+									<li><a href="javascript:;">Business Model</a></li>	
+									<li><a href="javascript:;">ABC</a></li>
+									<li><a href="javascript:;">DEF</a></li>
+									<li><a href="javascript:;">XYZ</a></li>
+								</ul>
+							</div>
+						
+							<div class="col-sm-3">
+								<ul class="site-footer-social-list">
+									<li><a href="javascript:;">Slide Deck</a></li>	
+									<li><a href="javascript:;">ABC</a></li>
+									<li><a href="javascript:;">DEF</a></li>
+									<li><a href="javascript:;">XYZ</a></li>
+								</ul>
+							</div>
+						</div>
+						<p class="site-footer-copyright">2016 © <a href="#" target="_blank">your copyright info</a> | all rights reserved.</p>
+					</div>
+				</footer>
+			</div>
+		</div>
+
+		<script src="assets/js/vendor/jquery-1.11.3.min.js"></script>
+		<script src='assets/js/vendor/bootstrap.min.js'></script>
+		<script src='assets/js/vendor/plugin.js'></script>
+		<script src='assets/js/variable.js'></script>
+		<script src='assets/js/map.js'></script>
+		<script src='assets/js/main.js'></script>
+		<script src='assets/js/demo.js'></script>
+
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<!--
+		<script>
+		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+		e.src='https://www.google-analytics.com/analytics.js';
+		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+		ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+		</script>
+		-->
+
+	</body>
+
+	<!-- Mirrored from demo.bonefishcode.com/flat-tech/demo/single-img/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Mar 2018 07:54:51 GMT -->
+</html>

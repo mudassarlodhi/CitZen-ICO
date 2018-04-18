@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie ie9 no-js" lang="en"><![endif]-->
+<!--[if gt IE 9 | !IE]><!-->
+<html class="no-js" lang="en">
+	<!--<![endif]-->
+
+	<!-- Mirrored from demo.bonefishcode.com/flat-tech/demo/single-img/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Mar 2018 07:54:08 GMT -->
+	<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>CitZen- ICO Page</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+		<link rel="icon" href="assets/img/citzen.png">
+		<link rel='stylesheet' href='assets/css/bootstrap.min.css'>
+		<link rel='stylesheet' href='assets/css/vendor.css'>
+		<link rel='stylesheet' href='assets/css/style.css'>
+		<link rel='stylesheet' href='assets/css/demo.css'>
+		<link rel='stylesheet' href='assets/css/custom.css'>
+		<!--[if lte IE 9]><!-->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MXQFGKP');</script>
+		<script src='assets/js/vendor/html5shiv.min.js'></script>
+		<!--<![endif]-->
+  
+		<style>
+			.particles-js-canvas-el
+			{
+				background-color: rgba(99,99,99 ,0.8) !important;
+			}
+			.is-site-bg-img .site-bg-img
+			{
+				background-image: url(assets/img/header-img.jpg) !important;
+			}
+			.site-bg-overlay 
+			{
+				background-color: rgba(99,99,99 ,0.8) !important;
+			}
+			@media (min-width: 992px)
+			{
+				.navbar-brand img 
+				{
+					max-height: 60px;
+				}
+			}
+        
+			.navbar-nav > li a
+			{
+				font-size: 12px !important;
+			}
+			.site-footer-social-list li
+			{
+				display: block;
+			}
+			.site-footer-social-list li:not(:first-child)
+			{
+				font-size: 12px !important;
+				font-weight: 500;
+			}
+			.site-footer-social-list li:first-child
+			{
+				text-decoration: underline;
+			}
+			.site-footer-social-list
+			{
+				text-align: left;
+			}
+			@media (min-width: 768px)
+			{
+				.footerRow .col-sm-2
+				{
+					width: 14%;
+				}
+         	
+			}
+				.container-fluid .col-sm-6:nth-child(odd)
+			{
+				padding-left: 55px !important;
+			}
+			.container-fluid .col-sm-6:nth-child(even)
+			{
+				padding-right: 55px !important;
+			}
+			.container-fluid .col-xs-12
+			{
+				padding-left: 55px !important;
+				padding-right: 55px !important; 
+			}
+         
+			/*
+			CounDown
+			*/
+			#clockdiv{
+				font-family: sans-serif;
+				color: #fff;
+				display: inline-block;
+				font-weight: 100;
+				text-align: center;
+				font-size: 30px;
+			}
+
+			#clockdiv > div{
+				padding: 10px;
+				border-radius: 3px;
+				background: transparent;
+				display: inline-block;
+			}
+
+			#clockdiv div > span{
+				padding: 15px;
+				border-radius: 3px;
+				background: dodgerblue;
+				display: inline-block;
+			}
+
+			.smalltext{
+				padding-top: 5px;
+				font-size: 16px;
+			}
+			
+			/* Timeline  */
+			.main-timeline{
+				overflow: hidden;
+				position: relative;
+			}
+			.main-timeline .timeline{
+				position: relative;
+				margin-top: -83px;
+			}
+			.main-timeline .timeline:first-child{ 
+				margin-top: 0; }
+			.main-timeline .timeline:before,
+			.main-timeline .timeline:after{
+				content: "";
+				display: block;
+				width: 100%;
+				clear: both;
+			}
+			.main-timeline .timeline:before{
+				content: "";
+				width: 100%;
+				height: 100%;
+				box-shadow: -8px 0 5px -5px rgba(0, 0, 0, 0.5) inset;
+				position: absolute;
+				top: 0;
+				right: 0;
+				z-index: 2;
+			}
+			.main-timeline .timeline-icon{
+				width: 210px;
+				height: 210px;
+				border-radius: 50%;
+				border: 25px solid transparent;
+				border-top-color: #f44556;
+				border-right-color: #f44556;
+				margin: auto;
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				z-index: 1;
+				transform: rotate(45deg);
+			}
+			.main-timeline .year{
+				display: block;
+				width: 110px;
+				height: 110px;
+				line-height: 110px;
+				border-radius: 50%;
+				background: #fff;
+				box-shadow: 0 0 20px rgba(0,0,0,0.4);
+				margin: auto;
+				font-size: 30px;
+				font-weight: bold;
+				color: #f44556;
+				text-align: center;
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				transform: rotate(-45deg);
+			}
+			.main-timeline .timeline-content{
+				width: 35%;
+				float: right;
+				background: #f44556;
+				padding: 30px 20px;
+				margin: 50px 0;
+				z-index: 1;
+				position: relative;
+			}
+			.main-timeline .timeline-content:before{
+				content: "";
+				width: 20%;
+				height: 15px;
+				background: #f44556;
+				position: absolute;
+				top: 50%;
+				left: -20%;
+				z-index: -1;
+				transform: translateY(-50%);
+			}
+			.main-timeline .title{
+				font-size: 20px;
+				font-weight: bold;
+				color: #fff;
+				margin: 0 0 10px 0;
+			}
+			.main-timeline .description{
+				font-size: 16px;
+				color: #fff;
+				line-height: 24px;
+				margin: 0;
+			}
+			.main-timeline .timeline:nth-child(2n):before{ 
+				box-shadow: 8px 0 5px -5px rgba(0, 0, 0, 0.5) inset; }
+			.main-timeline .timeline:nth-child(2n) .timeline-icon{ 
+				transform: rotate(-135deg); }
+			.main-timeline .timeline:nth-child(2n) .year{ 
+				transform: rotate(135deg); }
+			.main-timeline .timeline:nth-child(2n) .timeline-content{ 
+				float: left; }
+			.main-timeline .timeline:nth-child(2n) .timeline-content:before{
+				left: auto;
+				right: -20%;
+			}
+			.main-timeline .timeline:nth-child(2n) .timeline-icon{
+				border-top-color: #e97e2e;
+				border-right-color: #e97e2e;
+			}
+			.main-timeline .timeline:nth-child(2n) .year{ 
+				color: #e97e2e; }
+			.main-timeline .timeline:nth-child(2n) .timeline-content,
+			.main-timeline .timeline:nth-child(2n) .timeline-content:before{ 
+				background: #e97e2e; }
+			.main-timeline .timeline:nth-child(3n) .timeline-icon{
+				border-top-color: #13afae;
+				border-right-color: #13afae;
+			}
+			.main-timeline .timeline:nth-child(3n) .year{ 
+				color: #13afae; }
+			.main-timeline .timeline:nth-child(3n) .timeline-content,
+			.main-timeline .timeline:nth-child(3n) .timeline-content:before{ 
+				background: #13afae; }
+			.main-timeline .timeline:nth-child(4n) .timeline-icon{
+				border-top-color: #105572;
+				border-right-color: #105572;
+			}
+			.main-timeline .timeline:nth-child(4n) .year{ 
+				color: #105572; }
+			.main-timeline .timeline:nth-child(4n) .timeline-content,
+			.main-timeline .timeline:nth-child(4n) .timeline-content:before{ 
+				background: #105572; }
+			@media only screen and (max-width: 1199px){
+				.main-timeline .timeline{ 
+					margin-top: -103px; }
+				.main-timeline .timeline-content:before{ 
+					left: -18%; }
+				.main-timeline .timeline:nth-child(2n) .timeline-content:before{ 
+					right: -18%; }
+			}
+			@media only screen and (max-width: 990px){
+				.main-timeline .timeline{ 
+					margin-top: -127px; }
+				.main-timeline .timeline-content:before{ 
+					left: -2%; }
+				.main-timeline .timeline:nth-child(2n) .timeline-content:before{ 
+					right: -2%; }
+			}
+			@media only screen and (max-width: 767px){
+				.main-timeline .timeline{
+					margin-top: 0;
+					overflow: hidden;
+				}
+				.main-timeline .timeline:before,
+				.main-timeline .timeline:nth-child(2n):before{
+					box-shadow: none;
+				}
+				.main-timeline .timeline-icon,
+				.main-timeline .timeline:nth-child(2n) .timeline-icon{
+					margin-top: -30px;
+					margin-bottom: 20px;
+					position: relative;
+					transform: rotate(135deg);
+				}
+				.main-timeline .year,
+				.main-timeline .timeline:nth-child(2n) .year{ 
+					transform: rotate(-135deg); }
+				.main-timeline .timeline-content,
+				.main-timeline .timeline:nth-child(2n) .timeline-content{
+					width: 100%;
+					float: none;
+					border-radius: 0 0 20px 20px;
+					text-align: center;
+					padding: 25px 20px;
+					margin: 0 auto;
+				}
+				.main-timeline .timeline-content:before,
+				.main-timeline .timeline:nth-child(2n) .timeline-content:before{
+					width: 15px;
+					height: 25px;
+					position: absolute;
+					top: -22px;
+					left: 50%;
+					z-index: -1;
+					transform: translate(-50%,0);
+				}
+			}
+
+			/* Timeline Ends */
+			
+			#usecases .col-sm-4 h4 a
+			{
+				font-weight: 500;
+				font-size: 16px !important;
+			}
+			#usecases .col-sm-4
+			{
+				margin-top: 10px;
+				padding-top: 15px;
+				height: 440px;
+			}
+			#usecases .col-sm-4:hover 
+			{
+				background-color: #DCDCDC;
+			}
+			#usecases .section-content .row > div a
+			{
+				font-weight: 500;
+    			font-size: 16px !important;
+			}
+			#usecases .section-content .row > div
+			{
+				height: 340px;
+			}
+			.files
+			{
+			    margin-bottom: 22px;
+			}
+			.files img
+			{
+				width: 50px;
+				height: 50px;
+			}
+			.files a
+			{
+				width: 272px;
+				display: inline-block;
+				text-align: left;
+			}
+			.navbar-nav.navbar-right li
+			{
+				margin-left: -2px;
+			}
+         
+			.socialmediabuttons a
+			{
+				background-color: none !important;
+			}
+          
+           
+		          
+			.socialmediabuttons .fa 
+			{
+				padding: 7px;
+				font-size: 30px;
+				width: 45px;
+				text-align: center;
+				text-decoration: none;
+			
+			}
+			.socialmediabuttons .fa-facebook
+			{
+				color: #3B5998 !important;
+			}
+           
+			
+			.socialmediabuttons .fa-twitter {
+				color: #55ACEE !important;
+			}
+            
+			.socialmediabuttons .fa-google {
+				color: #dd4b39 !important ;
+			}
+			.socialmediabuttons .fa-linkedin {
+				color: #007bb5 !important;
+			}
+            
+			.socialmediabuttons .fa-instagram {
+				color: #125688 !important;
+			}
+			
+			.socialmediabuttons .fa-medium
+			{
+				color: #04CF6B !important;
+			}
+			
+		    
+			.socialmediabuttons .fa:hover {
+				opacity: 0.5;
+			}
+			
+			/* Team */
+			
+			
+			#team .column {
+				float: left;
+				width: 13% !important;
+				margin-bottom: 16px;
+				padding: 0 8px;
+			}
+
+			/* Display the columns below each other instead of side by side on small screens */
+			@media screen and (max-width: 650px) 
+			{
+				#team .column {
+					width: 100%;
+					display: block;
+				}
+			}
+
+			/* Add some shadows to create a card effect */
+			#team .card {
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			}
+
+			/* Some left and right padding inside the container */
+			#team .row .container {
+				padding: 0 16px;
+				width: 100% !important;
+			}
+
+			/* Clear floats */
+			#team .column .container::after, .row::after {
+				content: "";
+				clear: both;
+				display: table;
+			}
+
+			#team .title {
+				color: grey;
+				margin-bottom: 0px;
+			}
+
+			#team .button {
+				border: none;
+				outline: 0;
+				display: inline-block;
+				padding: 8px;
+				color: white;
+				background-color: #000;
+				text-align: center;
+				cursor: pointer;
+				/* width: 100%; */
+			
+			}
+
+			#team .button:hover {
+				background-color: #555;
+			}
+		
+			#team .column h2
+			{
+				font-size: 16px;
+                font-weight: 600;
+                margin-top: 6px;
+                margin-bottom: 0px !important;
+			}
+			#team .column .title
+			{
+				font-size: 12px;
+			}
+			#team button.btn-link
+			{
+				padding: 7px;
+			}
+           	
+			.otherPagesLink
+			{
+				background-color: rgba(255,255,255,0.09);
+    			line-height: 27px !important;
+			}
+			
+			@media (min-width: 992px){
+			#navbar-collapse .navbar-nav > li {
+			   float: right
+			}
+			
+			#navbarmobile
+			{
+				display: none !important;
+			}
+			
+			#navbar-largescreen
+			{
+				display: block !important;
+			}
+			
+			.otherPagesLink 
+			{
+			
+				position: absolute;
+				top: 0px;
+    			right: 0px;
+    			left: 0px;
+                width: 100%;
+			}
+			
+			}
+			@media (max-width: 991px)
+			{
+				.otherPageLink  {
+					float: none;
+					position: relative;
+					top: 0px;
+					left: 0px;
+					right: 0px;
+			    
+			}	
+			
+			#navbarmobile
+			{
+				display: block !important;
+			}
+			
+			#navbar-largescreen
+			{
+				display: none !important;
+			}
+			
+			}
+			.otherPagesLink a
+			{
+				font-weight: 700;
+			}
+			.navbar-right:not(.otherPagesLink)
+			{
+				margin-top: 38px;
+				
+			}
+			.navbar-right
+			{
+				line-height: 40px !important;
+			}
+				#home 
+			{
+				height:600px;
+			}
+			.global-active a
+			{
+				color:white !important;
+			}
+			.global-active a:after
+			{
+				border-bottom: 2px #1080f2 solid !important;
+				transform: translateX(-50%) scaleX(1) !important;
+				position: absolute;
+				bottom: -13px !important;
+				left: 50%;
+				content: "";
+				width: 90%;
+				height: 4px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				background-color: #1080f2;
+			}
+			.section:not(#home) 
+			{
+ 		       padding: 40px 0 !important;	
+			}
+			
+			
+			footer
+			{
+				background-color: #068ACE !important;
+			}
+         
+  
+		</style>
+	</head>
+	<body>
+   	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXQFGKP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+		<div class="site">
+			<div class="site-loader">
+				<div class="site-loader-spinner"></div>
+			</div> <!-- .site-loader -->
+
+			<div id="demo" class="ccard">
+				<div class="ccard__block">
+					<ul class="ccard__ul _light" data-type="toggle">
+						<li>
+							<h4>MAP</h4>
+							<a class="_on" data-on="is-map" data-off="is-map-disable"></a>
+						</li>
+					</ul>
+				</div>
+				<!--a class="ccard__toggle" href="#">
+					<img src="assets/img/ccard_toggle.png" alt="">
+				</a-->
+			</div> <!-- /demo -->
+
+			<div class="site-canvas">
+				<header class="site-header">
+				<nav class="navbar navbar-theme" id="navbar-largescreen">
+						<div class="container-fluid">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<div class="navbar-brand-wrap">
+									<a class="navbar-brand" href="#">
+										<img src="assets/img/logo2.png" alt="CitZen Logo" style="margin-top: 40px;max-height: 55px;margin-left: 20px;">
+									</a>
+								</div>
+							</div> <!-- .navbar-header -->
+							
+							
+							<div class="collapse navbar-collapse" id="navbar-collapse" style="display: none; !important">
+							
+							  <ul class="nav navbar-nav navbar-right otherPagesLink">	
+								
+								<li><a href="hiring.html">Join Our Team</a></li>
+								<li><a href="about.html">About Us</a></li>
+								<li><a href="#Airdrop">Airdrop</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li class="global-active"><a href="ico.html">ICO</a></li>
+								<li><a href="javascript:;">CitZen Reward</a></li>
+								<li><a href="javascript:;">CitZen Community</a></li>
+								<li><a href="platformViableSegments.html">Platform Viable Segments</a></li>
+								<li><a href="index.html">CitZen</a></li>
+							</ul>
+							
+							
+							
+								<ul class="nav navbar-nav navbar-right">
+								 
+								    
+									<li><a href="#download">Downloads</a></li>
+									<li><a href="#usecases">Use Cases</a></li>
+									<li><a href="#roadmap">Roadmap</a></li>
+									<li><a href="#solution">Solution</a></li>
+									<li><a href="#">Token Sale</a></li>
+									<li class="active"><a href="#home">Home</a></li>
+								</ul>
+								
+								
+								
+							</div> <!-- .navbar-collapse -->
+							
+							
+							
+							
+						</div>
+					</nav>
+					
+					
+					
+					<nav class="navbar navbar-theme" id="navbarmobile" >
+						<div class="container-fluid">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-collapse" aria-expanded="false">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<div class="navbar-brand-wrap">
+									<a class="navbar-brand" href="#">
+										<img src="assets/img/logo2.png" alt="">
+									</a>
+								</div>
+							</div> <!-- .navbar-header -->
+							
+							
+							
+							
+							<div class="collapse navbar-collapse " id="mobile-collapse">
+							
+							  <ul class="nav navbar-nav navbar-right otherPagesLink">	
+								
+								<li><a href="javascript:;">CitZen Community</a></li>
+								<li><a href="javascript:;">CitZen Reward</a></li>
+								<li><a href="ico.html">ICO</a></li>
+								<li><a href="blog.html">Blog</a></li>
+								<li><a href="#Airdrop">Airdrop</a></li>
+								<li><a href="about.html">About Us</a></li>
+								<li><a href="hiring.html">Join Us</a></li>
+							</ul>
+							
+							
+							
+								<ul class="nav navbar-nav navbar-right">
+									
+									<li class="active"><a href="#home">Home</a></li>
+									<li><a href="#brief_1">Future Is Here</a></li>
+									<li><a href="#roadmap">Roadmap</a></li>
+									<li><a href="#download">Downloads</a></li>
+									
+								</ul>
+								
+								
+								
+							</div> <!-- .navbar-collapse -->
+						</div>
+					</nav>
+				</header> <!-- .site-header -->
+				<main class="site-main">
+					<div id="home" class="section block-primary position-r align-c-xs-max">
+						<div id="particles-js" class="site-bg" >
+							<div class="site-bg-img"></div>
+							<div class="site-bg-video"></div>
+							<div class="site-bg-overlay"></div>
+							<div class="site-bg-effect layer" data-depth=".30"></div>
+							<canvas class="site-bg-canvas layer" data-depth=".30"></canvas>
+						</div> <!-- .site-bg -->
+
+						<div class="container">
+							<div class="row row-table">
+								<div class="col-sm-6">
+									<div class="col-inner" data-sr="left">
+										<div class="section-heading">
+											<h5>ICO Page</h5>
+											<h1>CitZen</h1>
+											<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+										</div> <!-- .section-heading -->
+										<div class="section-content">
+											<a class="btn btn-default m-y-5" href="blog.html">Blog</a>
+										</div> <!-- .section-content -->
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-p-l-1 m-t-60-xs-max">
+									<div id="clockdiv" class="row">
+										<div class="col-xs-3">
+											<span class="days"></span>
+											<div class="smalltext">Days</div>
+										</div>
+										<div class="col-xs-3">
+											<span class="hours"></span>
+											<div class="smalltext">Hours</div>
+										</div>
+										<div class="col-xs-3">
+											<span class="minutes"></span>
+											<div class="smalltext">Minutes</div>
+										</div >
+										<div class="col-xs-3">
+											<span class="seconds"></span>
+											<div class="smalltext">Seconds</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+
+						</div>
+					</div> <!-- #home -->
+
+
+					<div id="solution" class="section block-default align-c-xs-max">
+						<div class="container">
+							<div class="row row-table">
+								<div class="col-sm-6">
+									<div class="col-inner">
+										<div class="section-heading">
+											<h5>Flat Style Landing Page</h5>
+											<h2>Solution</h2>
+											<p>We've been working with Computer Development Systems for over a decade.  They brought us from just a few computers and one server to over 50 computers and multiple servers.  Everything runs efficiently since being installed and We could not be happier. They're experts in every way and there's never a job too big or too small. They always get it done!</p>
+										</div> <!-- .section-heading -->
+										<div class="section-content">
+											<ul class="icon-list align-l m-t-30">
+												<li><img src="assets/img/icon/chat.png" alt=""> Quisque sapien metus, ornare ac suscipit eget.</li>
+												<li><img src="assets/img/icon/pencil.png" alt=""> Quisque sapien metus, ornare ac suscipit eget.</li>
+												<li><img src="assets/img/icon/skull.png" alt=""> Quisque sapien metus, ornare ac suscipit eget.</li>
+											</ul>
+											<a class="btn btn-primary m-y-5" href="#aboutus">Know More</a>
+										</div> <!-- .section-content -->
+									</div>
+								</div>
+								<div class="col-sm-6 m-t-60-xs-max p-l-60-md-min">
+									<div class="col-inner clearfix">
+										<img class="img-responsive float-r-sm-min m-x-auto-xs-max" style="border-radius: 10%;" src="assets/img/story.jpg" alt="" data-sr="right">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> <!-- #brief_1 -->
+					
+					
+					
+					<div id="roadmap" class="section block-default align-c-xs-max" style="background-color: #F6F9FC;">
+						<div class="container">
+						<div class="col-xs-12">
+							<div class="section-heading">
+								<h5>Flat Style Landing Page</h5>
+								<h2>Roadmap</h2>
+								<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+							</div>
+							<div class="section-content">
+								<div class="main-timeline">
+									<div class="timeline">
+										<div class="timeline-icon"><span class="year">2018</span></div>
+										<div class="timeline-content">
+											<h3 class="title">Web Desginer</h3>
+											<p class="description">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi ultrices, luctus nunc ut, commodo enim. Vivamus sem erat.
+											</p>
+										</div>
+									</div>
+									<div class="timeline">
+										<div class="timeline-icon"><span class="year">2017</span></div>
+										<div class="timeline-content">
+											<h3 class="title">Web Developer</h3>
+											<p class="description">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi ultrices, luctus nunc ut, commodo enim. Vivamus sem erat.
+											</p>
+										</div>
+									</div>
+									<div class="timeline">
+										<div class="timeline-icon"><span class="year">2016</span></div>
+										<div class="timeline-content">
+											<h3 class="title">Web Desginer</h3>
+											<p class="description">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi ultrices, luctus nunc ut, commodo enim. Vivamus sem erat.
+											</p>
+										</div>
+									</div>
+                
+									<div class="timeline">
+										<div class="timeline-icon"><span class="year">2015</span></div>
+										<div class="timeline-content">
+											<h3 class="title">Web Desginer</h3>
+											<p class="description">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi ultrices, luctus nunc ut, commodo enim. Vivamus sem erat.
+											</p>
+										</div>
+									</div>
+								</div>
+						
+							</div>
+							</div>
+						</div>
+					</div>
+				
+				
+					<div id="usecases" class="section block-default align-c-xs-max">
+						<div class="container">
+						<div class="col-xs-12">
+							<div class="section-heading">
+								<h5>Flat Style Landing Page</h5>
+								<h2>Use Cases</h2>
+								<p>Most of our customers have been with us for five years or more and four out of five customers stay with us to work on additional software development projects once their initial piece of work has been finished. </p>
+							</div>
+							<div class="section-content">
+								<div class="row">
+									<div class="col-sm-3">
+										<img src="assets/img/header-img.jpg" style="width: 100%">
+										<h4><a href="javascript:;">Sports CRM For University Coaches</a></h4>
+										<p>
+											Built a Sports CRM for college and university coaches
+										</p>
+							
+									</div>
+							
+									<div class="col-sm-3">
+										<img src="assets/img/header-img.jpg" class="img-responsive float-r-sm-min m-x-auto-xs-max" style="width: 100%">
+										<h4><a href="javascript:;">Premium Mobile App Experience For Booking Taxi Online</a></h4>
+										<p>
+											Online Booking App For VIP Cars  (A Cab Company)
+										</p>
+							
+									</div>
+							
+									<div class="col-sm-3">
+										<img src="assets/img/header-img.jpg" style="width: 100%">
+										<h4><a href="javascript:;">Mobile App Development to Facilitate Fund Transfer and Payment</a></h4>
+										<p>
+											Developed secure fund transfer and payment app for resource devices.
+										</p>
+							
+									</div>
+							
+							
+									<div class="col-sm-3">
+										<img src="assets/img/header-img.jpg" style="width: 100%">
+										<h4><a href="javascript:;">Data Security Breach Solutions for an Industrial Automation Company</a></h4>
+										<p>
+											Anti-theft System for the client to improve their security posture.
+										</p>
+							
+									</div>
+							
+							
+									<div class="col-sm-3">
+										<img src="assets/img/header-img.jpg" style="width: 100%">
+										<h4><a href="javascript:;">e-Learning Platform for a Leading University</a></h4>
+										<p>
+											Provided e-Learning solutions to a leading university.
+										</p>
+							
+									</div>
+							
+								</div>
+							
+							
+							</div>
+							</div>
+						</div>
+				
+					</div>
+					
+					
+
+				
+				
+
+					
+					<!-- #download -->
+					<div id="download" class="section block-default align-c" style="background-color: #F6F9FC;">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="col-inner">
+										<div class="section-heading text-left">
+											<h5>Download Available</h5>
+											<h2>Get Resources Right Now!</h2>
+											<p>You Can Download The Required Files Or Can Install Our App From Google Store or App Store.</p>
+											
+											
+										</div>
+										<div class="section-content">
+											<div class="row files">
+												<a href="http://www.iqballawservices.com/wp-content/uploads/2016/05/Sale-Agreement.pdf
+"><span><img src="assets/img/word.png"></span> Vision Paper</a>
+
+
+												<a href="http://www.iqballawservices.com/wp-content/uploads/2016/05/Sale-Agreement.pdf
+"><span><img src="assets/img/pdf.png"></span> Token Sale Agreement</a>
+
+
+												<a href="http://www.iqballawservices.com/wp-content/uploads/2016/05/Sale-Agreement.pdf
+"><span><img src="assets/img/excel.png"></span> Budget Overview</a>
+											</div>
+											
+										
+											
+											
+											<a class="btn btn-primary m-y-5"><i class="fa fa-android"></i>Google Play</a>
+											<a class="btn btn-invert m-y"><i class="fa fa-apple"></i>App Store</a>
+										    
+											<div class="socialmediabuttons" style="margin-top: 40px;">
+												<a href="javascript:void(0)" class="fa fa-facebook"></a>
+												<a href="javascript:void(0)" class="fa fa-twitter"></a>
+												<a href="javascript:void(0)" class="fa fa-google"></a>
+												<a href="javascript:void(0)" class="fa fa-linkedin"></a>
+												<a href="javascript:void(0)" class="fa fa-instagram"></a>
+												<a href="javascript:void(0)" class="fa fa-skype"></a>
+												<a href="javascript:void(0)" class="fa fa-medium"></a>
+											</div>
+										     
+										</div> <!-- .section-content -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> <!-- #download -->
+
+				</main> <!-- .site-main -->
+				<footer class="site-footer block-invert" style="background-color:#099de6;">
+					<div class="container">
+						<img class="site-footer-logo img-responsive" src="assets/img/logo1.png" data-sr="bottom" data-sr-id="2" style="; visibility: visible;  -webkit-transform: translateY(0); opacity: 1;transform: translateY(0); opacity: 1;-webkit-transition: -webkit-transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; transition: transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; ">
+						<div class="row footerRow">
+							<div class="col-sm-3">
+								<ul class="site-footer-social-list">
+									<li><a href="javascript:;">Platform Viable Segments</a></li>	
+									<li><a href="javascript:;">CitZen</a></li>
+									<li><a href="javascript:;">Governments</a></li>
+									<li><a href="javascript:;">Businesses</a></li>
+									<li><a href="javascript:;">condominiums</a></li>
+									<!--
+									<li style="padding-left: 10px;line-height: 13px;"><a href="javascript:;" style="font-size: 10px;">Vertical Viable Segment</a></li>
+									
+									<li style=" padding-left: 27px;"><a href="javascript:;" style="font-size: 10px;">WeServ</a></li>
+									-->
+									
+									
+				
+								</ul>
+							</div>
+						
+							<div class="col-sm-3">
+								<ul class="site-footer-social-list">
+									<li><a href="javascript:;">Solution</a></li>	
+									<li><a href="javascript:;">Ecommerce Solution</a></li>
+									<li><a href="javascript:;">Business Solution</a></li>
+								</ul>
+							</div>
+						
+							<div class="col-sm-3">
+								<ul class="site-footer-social-list">
+									<li><a href="javascript:;">Use Case</a></li>	
+									<li><a href="javascript:;">ABC</a></li>
+									<li><a href="javascript:;">DEF</a></li>
+									<li><a href="javascript:;">XYZ</a></li>
+								</ul>
+							</div>
+						
+							<div class="col-sm-3">
+								<ul class="site-footer-social-list">
+									<li><a href="javascript:;">Technology</a></li>	
+									<li><a href="javascript:;">ABC</a></li>
+									<li><a href="javascript:;">DEF</a></li>
+									<li><a href="javascript:;">XYZ</a></li>
+								</ul>
+							</div>
+							<div class="clearfix"></div>
+							<br>
+						
+							<div class="col-sm-3">
+								<ul class="site-footer-social-list">
+									<li><a href="javascript:;">Legal</a></li>	
+									<li><a href="javascript:;">Customer Agreement</a></li>
+									<li><a href="javascript:;">Terms &amp; Conditions</a></li>
+									<li><a href="javascript:;">Privacy Policy</a></li>
+									<li><a href="javascript:;">Eula</a></li>
+								</ul>
+							</div>
+							
+							<div class="col-sm-3">
+								<ul class="site-footer-social-list">
+									<li><a href="javascript:;">CitZen</a></li>
+									<li><a href="javascript:;">About Us</a></li>	
+									<li><a href="javascript:;">Join Us</a></li>
+									<li><a href="javascript:;">Team</a></li>
+									<li><a href="javascript:;">Blog</a></li>
+									<li><a href="javascript:;">Press</a></li>
+								</ul>
+							</div>
+							
+							<div class="col-sm-3">
+								<ul class="site-footer-social-list">
+									<li><a href="javascript:;">Business Model</a></li>	
+									<li><a href="javascript:;">ABC</a></li>
+									<li><a href="javascript:;">DEF</a></li>
+									<li><a href="javascript:;">XYZ</a></li>
+								</ul>
+							</div>
+						
+							<div class="col-sm-3">
+								<ul class="site-footer-social-list">
+									<li><a href="javascript:;">Slide Deck</a></li>	
+									<li><a href="javascript:;">ABC</a></li>
+									<li><a href="javascript:;">DEF</a></li>
+									<li><a href="javascript:;">XYZ</a></li>
+								</ul>
+							</div>
+						</div>
+						<p class="site-footer-copyright">2016 © <a href="#" target="_blank">your copyright info</a> | all rights reserved.</p>
+					</div>
+				</footer>
+			</div>
+		</div>
+
+		<script type="text/javascript" src='https://maps.google.com/maps/api/js?key=AIzaSyABAXCmYooxcSc5GajYQIDIGgM9U2n6vyg&amp;libraries=places'></script>
+		<script src="assets/js/vendor/jquery-1.11.3.min.js"></script>
+		<script src='assets/js/vendor/bootstrap.min.js'></script>
+		<script src='assets/js/vendor/plugin.js'></script>
+		<script src='assets/js/variable.js'></script>
+		<script src='assets/js/map.js'></script>
+		<script src='assets/js/main.js'></script>
+		<script src='assets/js/demo.js'></script>
+
+		
+		<script>
+		
+			function getTimeRemaining(endtime) {
+				var t = Date.parse(endtime) - Date.parse(new Date());
+				var seconds = Math.floor((t / 1000) % 60);
+				var minutes = Math.floor((t / 1000 / 60) % 60);
+				var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+				var days = Math.floor(t / (1000 * 60 * 60 * 24));
+				return {
+					'total': t,
+					'days': days,
+					'hours': hours,
+					'minutes': minutes,
+					'seconds': seconds
+				};
+			}
+
+			function initializeClock(id, endtime) {
+				var clock = document.getElementById(id);
+				var daysSpan = clock.querySelector('.days');
+				var hoursSpan = clock.querySelector('.hours');
+				var minutesSpan = clock.querySelector('.minutes');
+				var secondsSpan = clock.querySelector('.seconds');
+
+				function updateClock() {
+					var t = getTimeRemaining(endtime);
+
+					daysSpan.innerHTML = t.days;
+					hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+					minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+					secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+					if (t.total <= 0) {
+						clearInterval(timeinterval);
+					}
+				}
+
+				updateClock();
+				var timeinterval = setInterval(updateClock, 1000);
+			}
+
+			var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+			initializeClock('clockdiv', deadline);
+			
+			
+			
+			function initMap() {
+				var uluru = {lat: -25.363, lng: 131.044};
+				var map = new google.maps.Map(document.getElementById('map'), {
+						zoom: 4,
+						center: uluru
+					});
+				var marker = new google.maps.Marker({
+						position: uluru,
+						map: map
+					});
+			}
+        
+			initMap();
+		
+		</script>
+
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<!--
+		<script>
+		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+		e.src='https://www.google-analytics.com/analytics.js';
+		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+		ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+		</script>
+
+		-->
+	</body>
+
+	<!-- Mirrored from demo.bonefishcode.com/flat-tech/demo/single-img/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Mar 2018 07:54:51 GMT -->
+</html>
