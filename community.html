@@ -12,7 +12,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CitZen- Blog Page</title>
+    <title>CitZen- Community</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
@@ -40,14 +40,13 @@
                 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-MXQFGKP');
-
     </script>
     <script src='assets/js/vendor/html5shiv.min.js'></script>
     <!--<![endif]-->
 
     <style>
         .is-site-bg-img .site-bg-img {
-            background-image: url(assets/img/blog.jpg);
+            background-image: url(assets/img/community.jpg) !important;
         }
 
 
@@ -237,6 +236,7 @@
             height: 100px;
         }
 
+
         .global-active a {
             color: white !important;
         }
@@ -255,14 +255,119 @@
             background-color: #1080f2;
         }
 
+
+
+        /* CheckBoxb */
+
+        .checkbox label:after,
+        .radio label:after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        .checkbox .cr,
+        .radio .cr {
+            position: relative;
+            display: inline-block;
+            border: 1px solid #a9a9a9;
+            border-radius: .25em;
+            width: 1.3em;
+            height: 1.3em;
+            float: left;
+            margin-right: .5em;
+            margin-top: 4px;
+        }
+
+        .radio .cr {
+            border-radius: 50%;
+        }
+
+        .checkbox .cr .cr-icon,
+        .radio .cr .cr-icon {
+            position: absolute;
+            font-size: .8em;
+            line-height: 0;
+            top: 50%;
+            left: 20%;
+        }
+
+        .radio .cr .cr-icon {
+            margin-left: 0.04em;
+        }
+
+        .checkbox label input[type="checkbox"],
+        .radio label input[type="radio"] {
+            display: none;
+        }
+
+        .checkbox label input[type="checkbox"]+.cr>.cr-icon,
+        .radio label input[type="radio"]+.cr>.cr-icon {
+            transform: scale(3) rotateZ(-20deg);
+            opacity: 0;
+            transition: all .3s ease-in;
+        }
+
+        .checkbox label input[type="checkbox"]:checked+.cr>.cr-icon,
+        .radio label input[type="radio"]:checked+.cr>.cr-icon {
+            transform: scale(1) rotateZ(0deg);
+            opacity: 1;
+        }
+
+        .checkbox label input[type="checkbox"]:disabled+.cr,
+        .radio label input[type="radio"]:disabled+.cr {
+            opacity: .5;
+        }
+
+
+
+
+
+
+
         footer {
             background-color: #068ACE !important;
         }
-        .site-bg-overlay
-        {
-        	background-color: rgba(0, 0, 0, 0.3) !important; 
+
+        .m_bottom_25 {
+            margin-bottom: 25px !important;
         }
 
+        .bold {
+            font-weight: bold;
+        }
+
+        /* Fake image */
+
+        .fakeimg {
+           width: 100%;
+        }
+        
+        .community .panel-body
+        {
+        	padding:0px;
+        	
+        }
+        .community .panel-body p 
+        {
+        	padding:10px;
+        }
+        .panel-footer
+        {
+        	overflow:hidden;
+        }
+        .promo
+        {
+        	margin-top:55px;
+        }
+        .promo img
+        {
+        	width: 100%;
+        }
+        .site-bg-overlay
+        {
+        	background-color: rgba(0, 0, 0, 0.2) !important;
+        }
     </style>
 </head>
 
@@ -289,138 +394,138 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <!--
 				<a class="ccard__toggle" href="#">
-				<img src="assets/img/ccard_toggle.png" alt="">
+					<img src="assets/img/ccard_toggle.png" alt="">
 				</a>
-				-->
+-->
         </div>
         <!-- /demo -->
 
         <div class="site-canvas">
-            <header class="site-header">
-                <nav class="navbar navbar-theme" id="navbar-largescreen" style="background-color:#212121;">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+           <header class="site-header">
+					<nav class="navbar navbar-theme" id="navbar-largescreen" style="background-color:#212121;">
+						<div class="container-fluid">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
 									<span class="sr-only">Toggle navigation</span>
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 								</button>
-                            <div class="navbar-brand-wrap">
-                                <a class="navbar-brand" href="#">
+								<div class="navbar-brand-wrap">
+									<a class="navbar-brand" href="#">
 										<img src="assets/img/logo2.png" alt="CitZen Logo" style="margin-top:40px; margin-left:2em; max-height:55px;">
 									</a>
-                            </div>
-                        </div>
-                        <!-- .navbar-header -->
-
-
-                        <div class="collapse navbar-collapse" id="navbar-collapse" style="display: none; !important">
-
-                            <ul class="nav navbar-nav navbar-right otherPagesLink">
-
-                                <li><a href="hiring.html">Join Our Team</a></li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="#Airdrop">Airdrop</a></li>
-                                <li class="global-active"><a href="blog.html">Blog</a></li>
-                                <li><a href="ico.html">ICO</a></li>
-                                <li><a href="javascript:;">Rewards Engine</a></li>
-                                <li><a href="javascript:;">Co-Creation</a></li>
-                                <li><a href="platformViableSegments.html">Platform Viable Segments</a></li>
-                                <li><a href="index.html">CitZen</a></li>
-                            </ul>
-
-
-
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href="techBlog.html">Tech Blog</a></li>
-                                <li class="active"><a href="#home">CitZen Blog</a></li>
-
-                            </ul>
-
-
-
-                        </div>
-                        <!-- .navbar-collapse -->
-
-
-
-
-                    </div>
-                </nav>
-
-
-
-                <nav class="navbar navbar-theme" id="navbarmobile">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-collapse" aria-expanded="false">
+								</div>
+							</div> <!-- .navbar-header -->
+							
+							
+							<div class="collapse navbar-collapse" id="navbar-collapse" style="display: none; !important">
+							
+								<ul class="nav navbar-nav navbar-right otherPagesLink">	
+								
+									<li><a href="hiring.html">Join Our Team</a></li>
+									<li><a href="about.html">About Us</a></li>
+									<li><a href="#Airdrop">Airdrop</a></li>
+									<li><a href="blog.html" >Blog</a></li>
+									<li><a href="ico.html">ICO</a></li>
+									<li><a href="javascript:;">Rewards Engine</a></li>
+									<li  class="global-active"><a href="co-ideas.html">Co-Creation</a></li>
+									<li><a href="platformViableSegments.html">Platform Viable Segments</a></li>
+									<li><a href="index.html">CitZen</a></li>
+								</ul>
+							
+							
+							
+								<ul class="nav navbar-nav navbar-right">
+									<li><button class="btn btn-primary" style="padding: 6px;">Submit an idea</button></li>
+									<li><a href="#">Login</a></li>
+									<li><a href="#">Support</a></li>
+									<li class="active"><a href="#home">Community</a></li>	
+									<li><a href="#">Challenges</a></li>
+									<li><a href="#">Co-Enable</a></li>
+									<li><a href="co-ideas.html">Co-idea</a></li>
+								</ul>
+								
+								
+								
+							</div> <!-- .navbar-collapse -->
+							
+							
+							
+							
+						</div>
+					</nav>
+					
+					
+					
+					<nav class="navbar navbar-theme" id="navbarmobile" >
+						<div class="container-fluid">
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-collapse" aria-expanded="false">
 									<span class="sr-only">Toggle navigation</span>
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 								</button>
-                            <div class="navbar-brand-wrap">
-                                <a class="navbar-brand" href="#">
+								<div class="navbar-brand-wrap">
+									<a class="navbar-brand" href="#">
 										<img src="assets/img/logo2.png" alt="">
 									</a>
-                            </div>
-                        </div>
-                        <!-- .navbar-header -->
-
-
-
-
-                        <div class="collapse navbar-collapse " id="mobile-collapse">
-
-                            <ul class="nav navbar-nav navbar-right otherPagesLink">
-
-                                <li><a href="javascript:;">CitZen Community</a></li>
-                                <li><a href="javascript:;">CitZen Reward</a></li>
-                                <li><a href="ico.html">ICO</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="#Airdrop">Airdrop</a></li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="hiring.html">Join Us</a></li>
-                            </ul>
-
-
-
-                            <ul class="nav navbar-nav navbar-right">
-
-                                <li class="active"><a href="#home">Home</a></li>
-                                <li><a href="#brief_1">Future Is Here</a></li>
-                                <li><a href="#roadmap">Roadmap</a></li>
-                                <li><a href="#download">Downloads</a></li>
-
-                            </ul>
-
-
-
-                        </div>
-                        <!-- .navbar-collapse -->
-                    </div>
-                </nav>
-            </header>
+								</div>
+							</div> <!-- .navbar-header -->
+							
+							
+							
+							
+							<div class="collapse navbar-collapse " id="mobile-collapse">
+							
+								<ul class="nav navbar-nav navbar-right otherPagesLink">	
+								
+									<li><a href="javascript:;">CitZen Community</a></li>
+									<li><a href="javascript:;">CitZen Reward</a></li>
+									<li><a href="ico.html">ICO</a></li>
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="#Airdrop">Airdrop</a></li>
+									<li><a href="about.html">About Us</a></li>
+									<li><a href="hiring.html">Join Us</a></li>
+								</ul>
+							
+							
+							
+								<ul class="nav navbar-nav navbar-right">
+									
+									<li class="active"><a href="#home">Home</a></li>
+									<li><a href="#brief_1">Future Is Here</a></li>
+									<li><a href="#roadmap">Roadmap</a></li>
+									<li><a href="#download">Downloads</a></li>
+									
+								</ul>
+								
+								
+								
+							</div> <!-- .navbar-collapse -->
+						</div>
+					</nav>
+				</header> <!-- .site-header -->
             <!-- .site-header -->
             <main class="site-main">
                 <div id="home" class="section block-primary position-r align-c-xs-max">
                     <div id="particles-js" class="site-bg">
                         <div class="site-bg-img"></div>
 
-                        <div class="site-bg-overlay" style="background-color: rgba(16, 128, 242, 0.9);"></div>
+                        <div class="site-bg-overlay" style="background-color: rgba(0, 0, 0, 0.4);"></div>
 
 
                         <canvas class="particles-js-canvas-el" width="1349" height="500" style="width: 100%; height: 100%;"></canvas></div>
                     <!-- .site-bg -->
 
                     <div class="container">
-                        <div class="row row-table">
+                        <div class="row">
                             <div class="col-sm-6">
                                 <div class="col-inner" data-sr="left" data-sr-id="3" style="; visibility: visible;  -webkit-transform: translateX(0); opacity: 1;transform: translateX(0); opacity: 1;-webkit-transition: -webkit-transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; transition: transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; ">
                                     <div class="section-heading">
-                                        <h5>Blog Page</h5>
-                                        <h1>CitZen</h1>
+                                        <h5>CitZen</h5>
+                                        <h1>Community</h1>
 
                                     </div>
                                     <!-- .section-heading -->
@@ -442,42 +547,136 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <!-- #home -->
 
 
-                <div id="brief_3" class="section block-default align-c-xs-max">
-                    <div class="container-fluid">
-                        <div class="row row-table">
-                            <div class="col-sm-6">
-                                <div class="col-inner">
-                                    <div class="section-heading">
-                                        <h5>Flat Style Landing Page</h5>
-                                        <h2>Today’s Big News</h2>
-                                        <p>A Big News Regarding Javascript Popularity.</p>
-                                    </div>
-                                    <!-- .section-heading -->
-                                    <div class="section-content">
-                                        <p>It’s by now a cliché that JS has become the <a href="http://www.hanselman.com/blog/JavaScriptIsWebAssemblyLanguageAndThatsOK.aspx">assembly language of the Web</a>. Rather, JS is one syntax for a portable and safe machine language, let’s say. Today I’m pleased to announce that cross-browser work has begun on <a href="https://github.com/WebAssembly"><b>WebAssembly</b></a>, a new intermediate representation for safe code on the Web.</p>
+                <div id="brief_3" class="section block-default align-c-xs-max" style="padding-top: 45px;">
+                    <div class="container">
+                    
+                    
+                    
+                    <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="col-inner">
+                                            <div class="section-heading">
+                                                <h5>CitZen Community</h5>
+                                                <h2>Creating Pathways to Opportunity</h2>
+                                                
+                                                
+                                            <iframe width="100%" height="315"src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                                                <p style="margin-bottom: 15px;">From the neighborhoods where our stores are located to those where our coffee is grown, we are committed to creating and investing in opportunities for people around the world.
+</p>
 
-                                        <p><b>What</b>: <a href="https://github.com/WebAssembly/design">WebAssembly</a>, “wasm” for short, <code>.wasm</code> filename suffix, a new binary syntax for low-level safe code, initially co-expressive with asm.js, but in the long run able to diverge from JS’s semantics, in order to best serve as common object-level format for multiple source-level programming languages.</p>
+<p>
+	Bringing people together, helping provide education and employment opportunities and making a difference in 
+people's lives – it's all part of being a good neighbor and a sustainable company. Starbucks, even as a public company, has always believed that we can balance profitability and a social conscience.
+</p>
+                                            </div>
+                                            <!-- .section-heading -->
+                                            <div class="section-content">
+                                            
 
-                                        <a class="btn btn-primary m-y-5" href="https://brendaneich.com/">More Details</a>
+                                                <div class="panel-group">
+                                                    <div class="row community">
+                                                        <div class="col-sm-12 col-md-6">
+
+                                                            <div class="panel panel-default m_bottom_25">
+                                                                <div class="panel-heading">
+                                                                    <span class="bold"> Community Services</span>
+                                                                </div>
+                                                                <div class="panel-body">
+                                                                    <img class="fakeimg" src="assets/img/service-community.jpg" />
+
+                                                                    <p>Lorem ipsum dolor sit amet, purus in lectus convallis in vestibulum, justo tempus bibendum vestibulum praesent, dui ante porttitor tempus mauris laoreet, nulla litora magna. Nostra enim. Augue pharetra et, tempus urna.
+
+                                                                    </p>
+                                                                </div>
+                                                                <div class="panel-footer">
+                                                                    
+                                                                    <small class="pull-right"> <a href="community-services.html">More <i class="fa fa-chevron-right"></i> </a>  </small>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        
+                                                         <div class="col-sm-12 col-md-6">
+
+                                                            <div class="panel panel-default m_bottom_25">
+                                                                <div class="panel-heading">
+                                                                    <span class="bold"> CitZen Foundation</span>
+                                                                </div>
+                                                                <div class="panel-body">
+                                                                    <img class="fakeimg" src="assets/img/foundation-community.jpg" />
+
+                                                                    <p>Lorem ipsum dolor sit amet, purus in lectus convallis in vestibulum, justo tempus bibendum vestibulum praesent, dui ante porttitor tempus mauris laoreet, nulla litora magna. Nostra enim. Augue pharetra et, tempus urna.
+
+                                                                    </p>
+                                                                </div>
+                                                                <div class="panel-footer" >
+                                                                   
+                                                                    <small class="pull-right"> <a href="community-services.html">More <i class="fa fa-chevron-right"></i> </a>  </small>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                       <div class="col-sm-12 col-md-6">
+
+                                                            <div class="panel panel-default m_bottom_25">
+                                                                <div class="panel-heading">
+                                                                    <span class="bold">Diversity & Inclusion</span>
+                                                                </div>
+                                                                <div class="panel-body">
+                                                                    <img class="fakeimg" src="assets/img/diversity-community.jpg" />
+
+                                                                    <p>Lorem ipsum dolor sit amet, purus in lectus convallis in vestibulum, justo tempus bibendum vestibulum praesent, dui ante porttitor tempus mauris laoreet, nulla litora magna. Nostra enim. Augue pharetra et, tempus urna.
+
+                                                                    </p>
+                                                                </div>
+                                                               <div class="panel-footer">
+                                                                   
+                                                                    <small class="pull-right"> <a href="community-services.html">More <i class="fa fa-chevron-right"></i> </a>  </small>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <!--                                        <a class="btn btn-primary m-y-5" href="https://brendaneich.com/">More Details</a>-->
+                                            </div>
+                                            <!-- .section-content -->
+                                        </div>
                                     </div>
-                                    <!-- .section-content -->
+
+                                    <!--        Filter and Search Right                    -->
+                                    <div class="col-sm-4 m-t-60-xs-max p-l-60-md-min">
+                                    <div class="row">
+                                    <div class="col-sm-12 promo"><h5 class="heading_promo">Join Our Community</h5><a href="index.html"><img alt="Know More About CitZen" src="assets/img/story.jpg"></a>Join a community service project in your neighborhood. <a href="index.html">See what we're doing</a>.</div>
+
+
+<div class="col-sm-12 promo"><h5 class="heading_promo">CitZen Guidelines</h5><a href="index.html"><img alt="Know More About CitZen" src="assets/img/citzen1.png"></a>
+Get To Know our guidelines. <a href="index.html">See what we are the rules</a>.</div>
+                                    
+                                    </div>
+
+
+
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-6 m-t-60-xs-max p-l-60-md-min">
-                                <div class="col-inner clearfix">
-                                    <img class="img-responsive float-r-sm-min m-x-auto-xs-max" style="border-radius: 6%;" src="assets/img/network.jpg" alt="" data-sr="right">
-                                </div>
-                            </div>
-                        </div>
+
+                        <!-- Tabbing List/Grid -->
+                       
+
+
                     </div>
                 </div>
-                <!-- #brief_3 -->
+
 
 
             </main>
             <!-- .site-main -->
             <footer class="site-footer block-invert" style="background-color:#099de6;">
-                <div class="container">
+                <div class="container-fluid">
                     <img class="site-footer-logo img-responsive" src="assets/img/logo1.png" data-sr="bottom" data-sr-id="2" style="; visibility: visible;  -webkit-transform: translateY(0); opacity: 1;transform: translateY(0); opacity: 1;-webkit-transition: -webkit-transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; transition: transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; ">
                     <div class="row footerRow">
                         <div class="col-sm-3">
@@ -565,7 +764,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </ul>
                         </div>
                     </div>
-                    <p class="site-footer-copyright">2016 © <a href="#" target="_blank">your copyright info</a> | all rights reserved.</p>
+                    <p class="site-footer-copyright">2018 © <a href="#" target="_blank">your copyright info</a> | all rights reserved.</p>
                 </div>
             </footer>
         </div>
