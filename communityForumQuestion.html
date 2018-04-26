@@ -238,9 +238,7 @@
         }
 
 
-        .global-active a {
-            color: white !important;
-        }
+       
 
         .global-active a:after {
             border-bottom: 2px #1080f2 solid !important;
@@ -353,19 +351,20 @@
         {
         	padding:10px;
         }
-        .quicklinks {
-    background-color: #353535;
-    padding: 5px 13px;
-    border-radius: 6px;
-}
-
-.quicklinks li a, .quicklinks h5 {
-    color: white !important;
-}
-
- .quicklinks li:hover
+         .quicklinks
         {
-        	background-color:green;
+        	background-color: rgba(0,0,0,0.05) !important;
+        	padding: 5px 13px;
+        	border-radius: 6px;
+
+        }
+        .quicklinks li a , .quicklinks h5
+        {
+        	color:black !important;
+        }
+        .quicklinks li:hover
+        {
+        	background-color:#70CAE3;
         }
         ol.breadcrumb
         {
@@ -425,11 +424,7 @@
           {
           	font-weight: 500;
           }
-          .authorstable tr td:nth-child(1) img
-          {
-          	width: 30px;
-          	height: 30px;
-          }
+        
           
           main
           {
@@ -474,6 +469,31 @@
 			.votebtn
 			{
 				    padding: 12px;
+			}
+			 #navbar-largescreen
+	        {
+	        	background-color: white !important;
+	        }
+	        #navbar-largescreen .otherPagesLink {
+	           background-color: rgba(0,0,0,0.03);
+			}
+			#navbar-largescreen li  a 
+			{
+				color:black; 
+			}
+			.global-active a
+			{
+				color:black !important;
+			}
+			#navbar-largescreen a
+			{
+				font-weight: 500;
+			}
+			
+			
+			h1, h2, h3, h4, h5, h6
+			{
+				font-weight:600;
 			}
 	
     </style>

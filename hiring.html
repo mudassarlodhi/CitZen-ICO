@@ -255,12 +255,37 @@
 			{
 				height:550px;
 			}
+			.global-active a:after
+			{
+				border-bottom: 2px #1080f2 solid !important;
+				transform: translateX(-50%) scaleX(1) !important;
+				position: absolute;
+				bottom: -13px !important;
+				left: 50%;
+				content: "";
+				width: 90%;
+				height: 4px;
+				-webkit-border-radius: 50px;
+				border-radius: 50px;
+				background-color: #1080f2;
+			}
 				
 			.otherPagesLink
 			{
 				background-color: rgba(255,255,255,0.09);
     			line-height: 27px !important;
 			}
+			
+			.navbar-brand img
+			{
+				margin-top: 40px;
+    margin-left: 2em;
+    max-height: 55px;
+			}
+			
+			.navbar-right {
+    line-height: 40px !important;
+}
 			
 			@media (min-width: 992px){
 			#navbar-collapse .navbar-nav > li {
@@ -332,6 +357,33 @@
 			{
 				background-color: rgba(25, 25, 25, 0.3) !important;
 			}
+			 #navbar-largescreen
+	        {
+	        	background-color: white !important;
+	        }
+	        #navbar-largescreen .otherPagesLink {
+	           background-color: rgba(0,0,0,0.03);
+			}
+			#navbar-largescreen li  a 
+			{
+				color:black; 
+			}
+			.global-active a
+			{
+				color:black !important;
+			}
+			#navbar-largescreen a
+			{
+				font-weight: 500;
+			}
+			
+			
+			
+			
+			h1, h2, h3, h4, h5, h6
+			{
+				font-weight:600;
+			}
 			
 		</style>
 	</head>
@@ -383,7 +435,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							  <ul class="nav navbar-nav navbar-right otherPagesLink">	
 								
 								<li class="active"><a href="hiring.html">Join Our Team</a></li>
-								<li ><a href="about.html">About Us</a></li>
+								<li class="global-active"><a href="about.html">About Us</a></li>
 								<li><a href="#Airdrop">Airdrop</a></li>
 								<li><a href="blog/" >Blog</a></li>
 								<li><a href="ico.html">ICO</a></li>
@@ -473,7 +525,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 						<div class="container">
 							<div class="row row-table">
-								<div class="col-sm-12">
+								<div class="col-sm-6">
 									<div class="col-inner" data-sr="left" data-sr-id="5" style="; visibility: visible;  -webkit-transform: translateX(0); opacity: 1;transform: translateX(0); opacity: 1;-webkit-transition: -webkit-transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; transition: transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; ">
 										<div class="section-heading">
 											<h5>Join Us</h5>
@@ -494,6 +546,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										</div> <!-- .section-content -->
 									</div>
 								</div>
+								<div class="col-sm-6"></div>
 							</div>
 						</div>
 					</div>
