@@ -12,7 +12,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CitZen- Community</title>
+    <title>CitZen- Community Basics</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
@@ -46,7 +46,8 @@
 
     <style>
         .is-site-bg-img .site-bg-img {
-            background-image: url(assets/img/community.jpg) !important;
+            background-image: url(assets/img/Discussion.png) !important;
+            opacity: 1;
         }
 
 
@@ -233,7 +234,7 @@
         }
 
         #home {
-            height: 100px;
+            height: 550px;
         }
 
 
@@ -352,13 +353,33 @@
         {
         	padding:10px;
         }
+        .quicklinks {
+    background-color: #353535;
+    padding: 5px 13px;
+    border-radius: 6px;
+}
+
+.quicklinks li a, .quicklinks h5 {
+    color: white !important;
+}
+
+ .quicklinks li:hover
+        {
+        	background-color:green;
+        }
+        ol.breadcrumb
+        {
+        	background-color:transparent;
+        }
+
         .panel-footer
         {
         	overflow:hidden;
         }
         .promo
         {
-        	margin-top:55px;
+        	margin-top: 17px;
+    		margin-bottom: 25px;
         }
         .promo img
         {
@@ -366,24 +387,53 @@
         }
         .site-bg-overlay
         {
-        	background-color: rgba(0, 0, 0, 0.03) !important;
+        	background-color: transparent !important;
         }
-        
-        #navbar-largescreen
+        .forumtable tbody td
         {
-        	background-color: white !important;
+        	    padding-top: 10px !important;
+    			padding-bottom: 6px !important;
         }
-         #navbar-largescreen li a 
+         .forumtable tbody td:nth-child(2) > a
          {
-         	color:black;
+         	    font-weight: 600;
+   				 font-size: 16px;
          }
-          #navbar-largescreen li:active a , .global-active a
+          .forumtable tbody td:nth-child(2) p
+         {
+         	margin: 0px;
+         }
+         .forumtable tbody tr td:nth-child(1)
+         {
+         	text-align: center !important; 
+         }
+           .forumtable tbody td:nth-child(3) , .forumtable tbody td:nth-child(4)
+           {
+           	 line-height: 54px;
+           }
+          .forumtable tbody td img
           {
-          	color:black !important;
-          } 
-          .otherPagesLink 
+          	width: 60px;
+    		height: 60px;
+    		border-radius: 27px;
+          }
+          .forumtable tbody a:hover
           {
-		    background-color: rgba(0, 0, 0, 0.1);
+          	text-decoration: underline !important;
+          }
+          .forumtable thead th
+          {
+          	font-weight: 500;
+          }
+          .authorstable tr td:nth-child(1) img
+          {
+          	width: 30px;
+          	height: 30px;
+          }
+          
+          main
+          {
+          	margin-top: 90px;
           }
     </style>
 </head>
@@ -457,9 +507,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									<li><button class="btn btn-primary" style="padding: 6px;">Submit an idea</button></li>
 									<li><a href="#">Login</a></li>
 									<li><a href="#">Support</a></li>
-									<li class="active"><a href="#home">Community</a></li>	
+									<li ><a href="">Community</a></li>	
 									<li><a href="#">Challenges</a></li>
-									<li><a href="communityForums.html">Co-Enable</a></li>
+									<li class="active"><a href="#home">Co-Enable</a></li>
 									<li><a href="co-ideas.html">Co-idea</a></li>
 								</ul>
 								
@@ -526,46 +576,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</header> <!-- .site-header -->
             <!-- .site-header -->
             <main class="site-main">
-                <div id="home" class="section block-primary position-r align-c-xs-max">
-                    <div id="particles-js" class="site-bg">
-                        <div class="site-bg-img"></div>
-
-                        <div class="site-bg-overlay" style="background-color: rgba(0, 0, 0, 0.4);"></div>
-
-
-                        <canvas class="particles-js-canvas-el" width="1349" height="500" style="width: 100%; height: 100%;"></canvas></div>
-                    <!-- .site-bg -->
-
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="col-inner" data-sr="left" data-sr-id="3" style="; visibility: visible;  -webkit-transform: translateX(0); opacity: 1;transform: translateX(0); opacity: 1;-webkit-transition: -webkit-transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; transition: transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; ">
-                                    <div class="section-heading">
-                                        <h5>CitZen</h5>
-                                        <h1>Community</h1>
-
-                                    </div>
-                                    <!-- .section-heading -->
-                                    <div class="section-content">
-
-                                    </div>
-                                    <!-- .section-content -->
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-md-p-l-1 m-t-60-xs-max">
-                                <div class="col-inner clearfix">
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- #home -->
+                
 
 
                 <div id="brief_3" class="section block-default align-c-xs-max" style="padding-top: 45px;">
                     <div class="container">
+                    <div class="row">
+                    <nav aria-label="breadcrumb">
+					  <ol class="breadcrumb">
+					    <li class="breadcrumb-item"><a href="communityForums.html">Forums</a></li>
+					    <li class="breadcrumb-item active" aria-current="page">CitZen Community Basics
+</li>
+					  </ol>
+					</nav>
+					</div>
                     
                     
                     
@@ -573,93 +597,97 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <div class="col-sm-8">
                                         <div class="col-inner">
                                             <div class="section-heading">
-                                                <h5>CitZen Community</h5>
-                                                <h2>Creating Pathways to Opportunity</h2>
+                                                <h2>CitZen Community Basics</h2>
                                                 
                                                 
-                                            <iframe width="100%" height="315"src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-                                                <p style="margin-bottom: 15px;">From the neighborhoods where our stores are located to those where our coffee is grown, we are committed to creating and investing in opportunities for people around the world.
-</p>
-
-<p>
-	Bringing people together, helping provide education and employment opportunities and making a difference in 
-people's lives – it's all part of being a good neighbor and a sustainable company. Starbucks, even as a public company, has always believed that we can balance profitability and a social conscience.
-</p>
+                                           
                                             </div>
                                             <!-- .section-heading -->
                                             <div class="section-content">
+                                            <div class="Forum">
+                                            <table class="table table-responsive forumtable">
+                                             <thead>
+								             <tr>
+								              <th></th>
+								              <th>Title</th>
+								              <th>Replies</th>
+								              <th>Views</th>
+								             </tr>
+								             </thead>
+                                            <tbody>
+                                            <tr>
+                                            <td><img src="assets/img/avatar1.jpg"></td>
+                                            <td><a href="communityForumQuestion.html">Community Rankings</a>
+                                            <p>by <a href="#">jzinthehouse</a> on ‎04-20-2018 06:49</p>
+                                            <p>Latest post on ‎04-22-2018 07:32</p>
+                                            </td>
+                                            <td>4</td>
+                                            <td>60</td>
+                                            </tr>
                                             
+                                            
+                                            <tr>
+                                            <td><img src="assets/img/avatar5.png"></td>
+                                            <td><a href="communityForumQuestion.html">Edit post in community</a>
+                                            <p>by <a href="#">JulieYoung</a> on ‎04-16-2018 16:59</p>
+                                            <p>Latest post on ‎04-16-2018 20:51 </p>
+                                            </td>
+                                            <td>1</td>
+                                            <td>130</td>
+                                            </tr>
+                                            
+                                            
+                                              <tr  class="success">
+                                            <td><img src="assets/img/avatar6.jpg"></td>
+                                            <td><a href="communityForumQuestion.html">Misspelled my Community Username</a>
+                                            <p>by <a href="#"> GoaliTilDeaths</a> on ‎09-25-2014 09:25s</p>
+                                            <p>Latest post on ‎04-12-2018 07:57 s</p>
+                                            </td>
+                                            <td>57</td>
+                                            <td>2632</td>
+                                            </tr>
+                                            
+                                            
+                                             <tr>
+                                            <td><img src="assets/img/avatar1.jpg"></td>
+                                            <td><a href="communityForumQuestion.html">Meet Allison</a>
+                                            <p>by <a href="#">jzinthehouse</a> on ‎04-20-2018 06:49</p>
+                                            <p>Latest post on ‎04-22-2018 07:32</p>
+                                            </td>
+                                            <td>4</td>
+                                            <td>60</td>
+                                            </tr>
+                                            
+                                            
+                                            <tr>
+                                            <td><img src="assets/img/avatar5.png"></td>
+                                            <td><a href="communityForumQuestion.html">How To: Edit Your Post</a>
+                                            <p>by <a href="#">JulieYoung</a> on ‎04-16-2018 16:59</p>
+                                            <p>Latest post on ‎04-16-2018 20:51 </p>
+                                            </td>
+                                            <td>1</td>
+                                            <td>130</td>
+                                            </tr>
+                                            
+                                            
+                                              <tr>
+                                            <td><img src="assets/img/avatar6.jpg"></td>
+                                            <td><a href="communityForumQuestion.html">Meet Solange</a>
+                                            <p>by <a href="#"> GoaliTilDeaths</a> on ‎09-25-2014 09:25s</p>
+                                            <p>Latest post on ‎04-12-2018 07:57 s</p>
+                                            </td>
+                                            <td>57</td>
+                                            <td>2632</td>
+                                            </tr>
+                                            
+                                            
+                                            </tbody>
+                                            
+                                            </table>
+                                            
+                                            </div>
 
-                                                <div class="panel-group">
-                                                    <div class="row community">
-                                                        <div class="col-sm-12 col-md-6">
-
-                                                            <div class="panel panel-default m_bottom_25">
-                                                                <div class="panel-heading">
-                                                                    <span class="bold"> Community Services</span>
-                                                                </div>
-                                                                <div class="panel-body">
-                                                                    <img class="fakeimg" src="assets/img/service-community.jpg" />
-
-                                                                    <p>Lorem ipsum dolor sit amet, purus in lectus convallis in vestibulum, justo tempus bibendum vestibulum praesent, dui ante porttitor tempus mauris laoreet, nulla litora magna. Nostra enim. Augue pharetra et, tempus urna.
-
-                                                                    </p>
-                                                                </div>
-                                                                <div class="panel-footer">
-                                                                    
-                                                                    <small class="pull-right"> <a href="community-services.html">More <i class="fa fa-chevron-right"></i> </a>  </small>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                        
-                                                         <div class="col-sm-12 col-md-6">
-
-                                                            <div class="panel panel-default m_bottom_25">
-                                                                <div class="panel-heading">
-                                                                    <span class="bold"> CitZen Foundation</span>
-                                                                </div>
-                                                                <div class="panel-body">
-                                                                    <img class="fakeimg" src="assets/img/foundation-community.jpg" />
-
-                                                                    <p>Lorem ipsum dolor sit amet, purus in lectus convallis in vestibulum, justo tempus bibendum vestibulum praesent, dui ante porttitor tempus mauris laoreet, nulla litora magna. Nostra enim. Augue pharetra et, tempus urna.
-
-                                                                    </p>
-                                                                </div>
-                                                                <div class="panel-footer" >
-                                                                   
-                                                                    <small class="pull-right"> <a href="community-services.html">More <i class="fa fa-chevron-right"></i> </a>  </small>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-
-                                                       <div class="col-sm-12 col-md-6">
-
-                                                            <div class="panel panel-default m_bottom_25">
-                                                                <div class="panel-heading">
-                                                                    <span class="bold">Diversity & Inclusion</span>
-                                                                </div>
-                                                                <div class="panel-body">
-                                                                    <img class="fakeimg" src="assets/img/diversity-community.jpg" />
-
-                                                                    <p>Lorem ipsum dolor sit amet, purus in lectus convallis in vestibulum, justo tempus bibendum vestibulum praesent, dui ante porttitor tempus mauris laoreet, nulla litora magna. Nostra enim. Augue pharetra et, tempus urna.
-
-                                                                    </p>
-                                                                </div>
-                                                               <div class="panel-footer">
-                                                                   
-                                                                    <small class="pull-right"> <a href="community-services.html">More <i class="fa fa-chevron-right"></i> </a>  </small>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-
-
-                                                <!--                                        <a class="btn btn-primary m-y-5" href="https://brendaneich.com/">More Details</a>-->
+                                            
                                             </div>
                                             <!-- .section-content -->
                                         </div>
@@ -668,11 +696,18 @@ people's lives – it's all part of being a good neighbor and a sustainable comp
                                     <!--        Filter and Search Right                    -->
                                     <div class="col-sm-4 m-t-60-xs-max p-l-60-md-min">
                                     <div class="row">
-                                    <div class="col-sm-12 promo"><h5 class="heading_promo">Join Our Community</h5><a href="index.html"><img alt="Know More About CitZen" src="assets/img/story.jpg"></a>Join a community service project in your neighborhood. <a href="index.html">See what we're doing</a>.</div>
-
-
-<div class="col-sm-12 promo"><h5 class="heading_promo">CitZen Guidelines</h5><a href="index.html"><img alt="Know More About CitZen" src="assets/img/citzen1.png"></a>
-Get To Know our guidelines. <a href="index.html">See what we are the rules</a>.</div>
+                                    <div class="col-sm-12 promo quicklinks">
+                                    <h5>Important Links</h5>
+                                    <ul style="list-style-type: none; padding: 0px;">
+									<li><a href="#">Community Guidelines</a></li>
+									<li><a href="#">Community Team</a></li>
+									<li><a href="#">Community Council</a></li>
+									<li><a href="#">Community Release Notes</a></li>
+								
+									</ul>
+                                    
+                                    
+                                    </div>
                                     
                                     </div>
 

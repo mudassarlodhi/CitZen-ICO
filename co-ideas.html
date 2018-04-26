@@ -233,11 +233,7 @@
 			{
 				line-height: 40px !important;
 			}
-			#home 
-			{
-				padding-top: 166px;
-				padding-bottom: 140px;
-			}
+			
 
 			.global-active a
 			{
@@ -392,13 +388,15 @@
 			}
 			.post-status
 			{
-				padding: 0px;
+				padding: 5px;
+				text-align: center;
 			}
 			.post-status p
 			{
 				background-color: greenyellow;
 				border-radius: 4px;
-				padding: 0px 3px;
+				padding: 2px 9px;
+    			display: inline;
 			}
 			.post-body .col-sm-12
 			{
@@ -458,12 +456,12 @@
 			}
 			.tab-content .post > a
 			{
-				color:inherit;
+				color: inherit;
 			}
 			
 			.tab-content .post > a:hover
 			{
-				color:inherit;
+				color: inherit;
 			}
 			.is-site-bg-img .site-bg-img
 			{
@@ -475,6 +473,47 @@
 				background-color: #D5F5E3 !important;
 				opacity: 0.2;
 			}
+			#navbar-largescreen
+			{
+				background-color: #F6F9FC !important;
+			}
+			#navbar-largescreen li a 
+			{
+				color: black !important;
+			}
+			.otherPagesLink 
+			{
+				background-color: rgba(0, 0, 0, 0.05);
+			}
+			.post-details
+			{
+				margin-top: 25px;
+				display: none;
+				margin: 14px 9px;
+			}
+			.teamresponse
+			{
+				background-color: skyblue;
+				padding: 5px;
+				border-radius: 11px;
+				margin: 0px 6px;
+			}
+			a:not(.btn):focus
+			{
+				color: #373737 !important;
+			}
+			.post-detailsButton
+			{
+				padding: 8px 20px;
+			}
+			#home
+			{
+				    height: 500px;
+			}
+			@media (min-width: 768px){
+			#home {
+			    padding: 230px 0 180px;
+			}}
 		</style>
 	</head>
 	<body>
@@ -546,7 +585,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									<li><a href="#">Support</a></li>
 									<li><a href="community.html">Community</a></li>	
 									<li><a href="#">Challenges</a></li>
-									<li><a href="#">Co-Enable</a></li>
+									<li><a href="communityForums.html">Co-Enable</a></li>
 									<li class="active"><a href="#home">Co-idea</a></li>
 								</ul>
 								
@@ -924,7 +963,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								
 										<li ><h5 data-toggle="tab" data-toggle="tab" href="#trendingtab" aria-expanded="false">Trending (4)</h4></li>
 								
-										<li ><h5 data-toggle="tab" data-toggle="tab" href="#populartab" aria-expanded="false>Popular (5)</h4></li>
+										
 								
 								<li ><h5 data-toggle="tab" data-toggle="tab" href="#topalltimetab" aria-expanded="false">Top All Time (14)</h5></li>
 								
@@ -935,110 +974,449 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									<div class="tab-content">
 										<div id="recenttab" class="tab-pane fade active in">
 											<div class="post">
-											<a href="Theidea.html">
-												<div class="row post-body">
-													<div class="col-sm-9">
-														<h4>Get 206% More Traffic To Your Blog Posts.</h4>
+												<a href="javascript:;" class="openPostDetails" style="text-decoration: none;">
+													<div class="row post-body">
+														<div class="col-sm-9">
+															<h4>Get 206% More Traffic To Your Blog Posts.</h4>
+														</div>
+									
+														<div class="col-sm-3">
+															<h4>7000 Votes</h4>
+														</div>
+									
+														<div class="col-sm-12">
+															Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+														</div>
 													</div>
 									
-													<div class="col-sm-3">
-														<h4>7000 Votes</h4>
+													<div class="row post-footer">
+														<div class="col-sm-5 post-created">
+															<p><i class="fa fa-user"></i> Created 10 Days Ago By <span>Chris Kole</span></p>
+														</div>
+									
+									
+														<div class="col-sm-3 post-status">
+															<p>Likely To Implement</p>
+														</div>
+									
+														<div class="col-sm-2 post-comments">
+															<p><i class="fa fa-comments-o"></i> 100</p>
+														</div>
+														
+														<div class="col-sm-2">
+															<button class="btn btn-primary post-detailsButton">Details</button>
+														</div>
+									
 													</div>
-									
-													<div class="col-sm-12">
-														Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-													</div>
-												</div>
-									
-												<div class="row post-footer">
-													<div class="col-sm-7 post-created">
-														<p><i class="fa fa-user"></i> Created 10 Days Ago By <span>Chris Kole</span></p>
-													</div>
-									
-									
-													<div class="col-sm-3 post-status">
-														<p>Likely To Implement</p>
-													</div>
-									
-													<div class="col-sm-2 post-comments">
-														<p><i class="fa fa-comments-o"></i> 100</p>
-													</div>
-									
-												</div>
 												</a>
+												
+												
+												
+												<div class="row post-details">
+												
+													<div class="col-sm-12 teamresponse">
+													<div class="col-sm-6">
+													<h4>Team Response</h4>
+													</div>
+													
+													<div class="col-sm-3 col-sm-offset-3">
+													<h4>22-04-2018</h4>
+													</div>
+														<p >
+															Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+
+														</p>
+										
+													</div>
+										
+										
+													<ul class="nav nav-tabs">
+														<li class="active"><h5 data-toggle="tab" href="#commentstab1" aria-expanded="false">Comments (<span class="numberOfCommentsonPost">2</span>)</h5></li>
+								
+														<li><h5 data-toggle="tab" href="#votestab1" aria-expanded="false">Votes (12)</h5></li>
+								
+														<li><h5 data-toggle="tab" href="#topalltimetab1" aria-expanded="false">Top All Time (2)</h5></li>
+								
+													</ul>
+											
+													<div class="tab-content" style="margin-top: 25px;">
+														<div id="commentstab1" class="tab-pane fade active in">
+															<div class="col-sm-12">
+																<div class="media">
+																	<div class="media-left">
+																		<a href="#">
+																			<img class="media-object" alt="" src="assets/img/avatar1.jpg"> </a>
+																	</div>
+																	<div class="media-body">
+																		<h4 class="media-heading">
+																			<small class="text-muted">Mike Morroe commented on 25 December 2015, 9:40PM</small>
+																		</h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen boo</div>
+																</div>
+                                                        
+																<div class="media">
+																	<div class="media-left">
+																		<a href="#">
+																			<img class="media-object" alt="" src="assets/img/avatar6.jpg"> </a>
+																	</div>
+																	<div class="media-body">
+																		<h4 class="media-heading">
+																			<small class="text-muted">Jane Khan commented on 30 May 2015, 9:40PM</small>
+																		</h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen boo</div>
+																</div>
+                                                        
+																<div class="row" style="
+    margin-top:  25px;
+    padding:  7px;
+">
+																	<div class="form-group form-md-line-input form-md-floating-label">
+																		<input type="text" class="form-control replyfield" placeholder="Comment...">
+																	</div>
+    
+																	<button class="btn btn-link waves-effect waves-light" style="float: left;padding:  12px;background-color: #F0F0F0;">Attach File</button>
+																	<button class="btn btn-primary commentonpost waves-effect waves-light" style="padding: 12px;float: right;">Comment</button>
+   
+    
+																</div>
+                                                        
+															</div>
+														</div>
+										
+														<div id="votestab1" class="tab-pane fade">
+															<div class="col-sm-12">
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+											
+															</div>
+														</div>
+										
+														<div id="topalltimetab1" class="tab-pane fade">
+															<div class="col-sm-12">
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+															</div>
+														</div>
+										
+										
+										
+													</div>
+												
+												</div>
 									
 											</div>
 									
 									
 											<div class="post">
-											<a href="Theidea.html">
-												<div class="row post-body">
-													<div class="col-sm-9">
-														<h4>The Best Advice You Can Hear About.</h4>
-													</div>
+												<a href="javascript:;" class="openPostDetails">
+													<div class="row post-body">
+														<div class="col-sm-9">
+															<h4>The Best Advice You Can Hear About.</h4>
+														</div>
 									
-													<div class="col-sm-3">
-														<h4>10000 Votes</h4>
-													</div>
+														<div class="col-sm-3">
+															<h4>10000 Votes</h4>
+														</div>
 									
-													<div class="col-sm-12">
-														Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+														<div class="col-sm-12">
+															Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+														</div>
 													</div>
+												
+												
+									
+													<div class="row post-footer">
+														<div class="col-sm-5 post-created">
+															<p><i class="fa fa-user"></i> Created 10 Days Ago By <span>Charles Chris</span></p>
+														</div>
+									
+														<div class="col-sm-3 post-status">
+															<p>Unlikely To Implement</p>
+														</div>
+									
+														<div class="col-sm-2 post-comments">
+															<p><i class="fa fa-comments-o"></i> 100</p>
+														</div>
+														
+														<div class="col-sm-2">
+														<button class="btn btn-primary post-detailsButton">Details</button>
+														</div>
+									
+													</div>
+												
+												
+												
+												</a>
+												
+												
+												
+												<div class="row post-details">
+												
+													<div class="col-sm-12 teamresponse">
+													<div class="col-sm-6">
+													<h4>Team Response</h4>
+													</div>
+													
+													<div class="col-sm-3 col-sm-offset-3">
+													<h4>22-04-2018</h4>
+													</div>
+														<p >
+															Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+
+														</p>
+										
+													</div>
+										
+										
+													<ul class="nav nav-tabs">
+														<li class="active"><h5 data-toggle="tab" href="#commentstab2" aria-expanded="false">Comments (<span class="numberOfCommentsonPost">2</span>)</h5></li>
+								
+														<li><h5 data-toggle="tab" href="#votestab2" aria-expanded="false">Votes (12)</h5></li>
+								
+														<li><h5 data-toggle="tab" href="#topalltimetab2" aria-expanded="false">Top All Time (2)</h5></li>
+								
+													</ul>
+											
+													<div class="tab-content" style="margin-top: 25px;">
+														<div id="commentstab2" class="tab-pane fade active in">
+															<div class="col-sm-12">
+																<div class="media">
+																	<div class="media-left">
+																		<a href="#">
+																			<img class="media-object" alt="" src="assets/img/avatar1.jpg"> </a>
+																	</div>
+																	<div class="media-body">
+																		<h4 class="media-heading">
+																			<small class="text-muted">Mike Morroe commented on 25 December 2015, 9:40PM</small>
+																		</h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen boo</div>
+																</div>
+                                                        
+																<div class="media">
+																	<div class="media-left">
+																		<a href="#">
+																			<img class="media-object" alt="" src="assets/img/avatar6.jpg"> </a>
+																	</div>
+																	<div class="media-body">
+																		<h4 class="media-heading">
+																			<small class="text-muted">Jane Khan commented on 30 May 2015, 9:40PM</small>
+																		</h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen boo</div>
+																</div>
+                                                        
+																<div class="row" style="
+    margin-top:  25px;
+    padding:  7px;
+">
+																	<div class="form-group form-md-line-input form-md-floating-label">
+																		<input type="text" class="form-control replyfield" placeholder="Comment...">
+																	</div>
+    
+																	<button class="btn btn-link waves-effect waves-light" style="float: left;padding:  12px;background-color: #F0F0F0;">Attach File</button>
+																	<button class="btn btn-primary commentonpost waves-effect waves-light" style="padding: 12px;float: right;">Comment</button>
+   
+    
+																</div>
+                                                        
+															</div>
+														</div>
+										
+														<div id="votestab2" class="tab-pane fade">
+															<div class="col-sm-12">
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+											
+															</div>
+														</div>
+										
+														<div id="topalltimetab2" class="tab-pane fade">
+															<div class="col-sm-12">
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+															</div>
+														</div>
+										
+										
+										
+													</div>
+												
 												</div>
 									
-												<div class="row post-footer">
-													<div class="col-sm-7 post-created">
-														<p><i class="fa fa-user"></i> Created 10 Days Ago By <span>Charles Chris</span></p>
-													</div>
 									
-									
-													<div class="col-sm-3 post-status">
-														<p>Unlikely To Implement</p>
-													</div>
-									
-													<div class="col-sm-2 post-comments">
-														<p><i class="fa fa-comments-o"></i> 100</p>
-													</div>
-									
-												</div>
-									</a>
 											</div>
 								  
 										</div>
 								  
 										<div id="trendingtab" class="tab-pane fade">
 											<div class="post">
-											<a href="Theidea.html">
-												<div class="row post-body">
-													<div class="col-sm-9">
-														<h4>Wonderful Headlines Here</h4>
+												<a href="javascript:;" class="openPostDetails">
+													<div class="row post-body">
+														<div class="col-sm-9">
+															<h4>Wonderful Headlines Here</h4>
+														</div>
+									
+														<div class="col-sm-3">
+															<h4>5000 Votes</h4>
+														</div>
+									
+														<div class="col-sm-12">
+															Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+														</div>
 													</div>
 									
-													<div class="col-sm-3">
-														<h4>5000 Votes</h4>
-													</div>
+													<div class="row post-footer">
+														<div class="col-sm-5 post-created">
+															<p><i class="fa fa-user"></i> Created 10 Days Ago By <span>Chris Kole</span></p>
+														</div>
 									
-													<div class="col-sm-12">
-														Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+									
+														<div class="col-sm-3 post-status">
+															<p>Likely To Implement</p>
+														</div>
+									
+														<div class="col-sm-2 post-comments">
+															<p><i class="fa fa-comments-o"></i> 100</p>
+														</div>
+														
+														<div class="col-sm-2">
+														<button class="btn btn-primary post-detailsButton">Details</button>
+														</div>
+									
 													</div>
+												</a>
+												
+												
+												
+												<div class="row post-details">
+												
+													<div class="col-sm-12 teamresponse">
+													<div class="col-sm-6">
+													<h4>Team Response</h4>
+													</div>
+													
+													<div class="col-sm-3 col-sm-offset-3">
+													<h4>22-04-2018</h4>
+													</div>
+														<p >
+															Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+
+														</p>
+										
+													</div>
+										
+										
+													<ul class="nav nav-tabs">
+														<li class="active"><h5 data-toggle="tab" href="#commentstab3" aria-expanded="false">Comments (<span class="numberOfCommentsonPost">2</span>)</h5></li>
+								
+														<li><h5 data-toggle="tab" href="#votestab3" aria-expanded="false">Votes (12)</h5></li>
+								
+														<li><h5 data-toggle="tab" href="#topalltimetab3" aria-expanded="false">Top All Time (2)</h5></li>
+								
+													</ul>
+											
+													<div class="tab-content" style="margin-top: 25px;">
+														<div id="commentstab3" class="tab-pane fade active in">
+															<div class="col-sm-12">
+																<div class="media">
+																	<div class="media-left">
+																		<a href="#">
+																			<img class="media-object" alt="" src="assets/img/avatar1.jpg"> </a>
+																	</div>
+																	<div class="media-body">
+																		<h4 class="media-heading">
+																			<small class="text-muted">Mike Morroe commented on 25 December 2015, 9:40PM</small>
+																		</h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen boo</div>
+																</div>
+                                                        
+																<div class="media">
+																	<div class="media-left">
+																		<a href="#">
+																			<img class="media-object" alt="" src="assets/img/avatar6.jpg"> </a>
+																	</div>
+																	<div class="media-body">
+																		<h4 class="media-heading">
+																			<small class="text-muted">Jane Khan commented on 30 May 2015, 9:40PM</small>
+																		</h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen boo</div>
+																</div>
+                                                        
+																<div class="row" style="
+    margin-top:  25px;
+    padding:  7px;
+">
+																	<div class="form-group form-md-line-input form-md-floating-label">
+																		<input type="text" class="form-control replyfield" placeholder="Comment...">
+																	</div>
+    
+																	<button class="btn btn-link waves-effect waves-light" style="float: left;padding:  12px;background-color: #F0F0F0;">Attach File</button>
+																	<button class="btn btn-primary commentonpost waves-effect waves-light" style="padding: 12px;float: right;">Comment</button>
+   
+    
+																</div>
+                                                        
+															</div>
+														</div>
+										
+														<div id="votestab3" class="tab-pane fade">
+															<div class="col-sm-12">
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+											
+															</div>
+														</div>
+										
+														<div id="topalltimetab3" class="tab-pane fade">
+															<div class="col-sm-12">
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+															</div>
+														</div>
+										
+										
+										
+													</div>
+												
 												</div>
-									
-												<div class="row post-footer">
-													<div class="col-sm-7 post-created">
-														<p><i class="fa fa-user"></i> Created 10 Days Ago By <span>Chris Kole</span></p>
-													</div>
-									
-									
-													<div class="col-sm-3 post-status">
-														<p>Likely To Implement</p>
-													</div>
-									
-													<div class="col-sm-2 post-comments">
-														<p><i class="fa fa-comments-o"></i> 100</p>
-													</div>
-									
-												</div>
-									 			</a>
 											</div>
 									
 									
@@ -1046,150 +1424,296 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									
 									
 											<div class="post">
-											<a href="Theidea.html">
-												<div class="row post-body">
-													<div class="col-sm-9">
-														<h4>Tell The Story And Deliver On The Expectation.</h4>
+												<a href="javascript:;" class="openPostDetails">
+													<div class="row post-body">
+														<div class="col-sm-9">
+															<h4>Tell The Story And Deliver On The Expectation.</h4>
+														</div>
+									
+														<div class="col-sm-3">
+															<h4>7000 Votes</h4>
+														</div>
+									
+														<div class="col-sm-12">
+															Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+														</div>
 													</div>
 									
-													<div class="col-sm-3">
-														<h4>7000 Votes</h4>
-													</div>
+													<div class="row post-footer">
+														<div class="col-sm-5 post-created">
+															<p><i class="fa fa-user"></i> Created 10 Days Ago By <span>Chris Kole</span></p>
+														</div>
 									
-													<div class="col-sm-12">
-														Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+									
+														<div class="col-sm-3 post-status">
+															<p>Likely To Implement</p>
+														</div>
+									
+														<div class="col-sm-2 post-comments">
+															<p><i class="fa fa-comments-o"></i> 100</p>
+														</div>
+														
+														<div class="col-sm-2">
+														<button class="btn btn-primary post-detailsButton">Details</button>
+														</div>
+									
 													</div>
+												</a>
+												<div class="row post-details">
+												
+													<div class="col-sm-12 teamresponse">
+													<div class="col-sm-6">
+													<h4>Team Response</h4>
+													</div>
+													
+													<div class="col-sm-3 col-sm-offset-3">
+													<h4>22-04-2018</h4>
+													</div>
+														<p >
+															Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+
+														</p>
+										
+													</div>
+										
+										
+													<ul class="nav nav-tabs">
+														<li class="active"><h5 data-toggle="tab" href="#commentstab4" aria-expanded="false">Comments (<span class="numberOfCommentsonPost">2</span>)</h5></li>
+								
+														<li><h5 data-toggle="tab" href="#votestab4" aria-expanded="false">Votes (12)</h5></li>
+								
+														<li><h5 data-toggle="tab" href="#topalltimetab4" aria-expanded="false">Top All Time (2)</h5></li>
+								
+													</ul>
+											
+													<div class="tab-content" style="margin-top: 25px;">
+														<div id="commentstab4" class="tab-pane fade active in">
+															<div class="col-sm-12">
+																<div class="media">
+																	<div class="media-left">
+																		<a href="#">
+																			<img class="media-object" alt="" src="assets/img/avatar1.jpg"> </a>
+																	</div>
+																	<div class="media-body">
+																		<h4 class="media-heading">
+																			<small class="text-muted">Mike Morroe commented on 25 December 2015, 9:40PM</small>
+																		</h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen boo</div>
+																</div>
+                                                        
+																<div class="media">
+																	<div class="media-left">
+																		<a href="#">
+																			<img class="media-object" alt="" src="assets/img/avatar6.jpg"> </a>
+																	</div>
+																	<div class="media-body">
+																		<h4 class="media-heading">
+																			<small class="text-muted">Jane Khan commented on 30 May 2015, 9:40PM</small>
+																		</h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen boo</div>
+																</div>
+                                                        
+																<div class="row" style="
+    margin-top:  25px;
+    padding:  7px;
+">
+																	<div class="form-group form-md-line-input form-md-floating-label">
+																		<input type="text" class="form-control replyfield" placeholder="Comment...">
+																	</div>
+    
+																	<button class="btn btn-link waves-effect waves-light" style="float: left;padding:  12px;background-color: #F0F0F0;">Attach File</button>
+																	<button class="btn btn-primary commentonpost waves-effect waves-light" style="padding: 12px;float: right;">Comment</button>
+   
+    
+																</div>
+                                                        
+															</div>
+														</div>
+										
+														<div id="votestab4" class="tab-pane fade">
+															<div class="col-sm-12">
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+											
+															</div>
+														</div>
+										
+														<div id="topalltimetab4" class="tab-pane fade">
+															<div class="col-sm-12">
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+															</div>
+														</div>
+										
+										
+										
+													</div>
+												
 												</div>
-									
-												<div class="row post-footer">
-													<div class="col-sm-7 post-created">
-														<p><i class="fa fa-user"></i> Created 10 Days Ago By <span>Chris Kole</span></p>
-													</div>
-									
-									
-													<div class="col-sm-3 post-status">
-														<p>Likely To Implement</p>
-													</div>
-									
-													<div class="col-sm-2 post-comments">
-														<p><i class="fa fa-comments-o"></i> 100</p>
-													</div>
-									
-												</div>
-									</a>
 											</div>
 								  
 										</div>
 								  
 								   
-								  
-										<div id="populartab" class="tab-pane fade">
-											<div class="post">
-											<a href="Theidea.html">
-												<div class="row post-body">
-													<div class="col-sm-9">
-														<h4>Get 206% More Traffic To Your Blog Posts.</h4>
-													</div>
-									
-													<div class="col-sm-3">
-														<h4>7000 Votes</h4>
-													</div>
-									
-													<div class="col-sm-12">
-														Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-													</div>
-												</div>
-									
-												<div class="row post-footer">
-													<div class="col-sm-7 post-created">
-														<p><i class="fa fa-user"></i> Created 10 Days Ago By <span>Chris Kole</span></p>
-													</div>
-									
-									
-													<div class="col-sm-3 post-status">
-														<p>Will Not Be Implemented</p>
-													</div>
-									
-													<div class="col-sm-2 post-comments">
-														<p><i class="fa fa-comments-o"></i> 100</p>
-													</div>
-									
-												</div>
-									    </a>
-											</div>
-									
-									
-											<div class="post">
-											<a href="Theidea.html">
-												<div class="row post-body">
-													<div class="col-sm-9">
-														<h4>The Best Advice You Can Hear About.</h4>
-													</div>
-									
-													<div class="col-sm-3">
-														<h4>10000 Votes</h4>
-													</div>
-									
-													<div class="col-sm-12">
-														Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-													</div>
-												</div>
-									
-												<div class="row post-footer">
-													<div class="col-sm-7 post-created">
-														<p><i class="fa fa-user"></i> Created 10 Days Ago By <span>Charles Chris</span></p>
-													</div>
-									
-									
-													<div class="col-sm-3 post-status">
-														<p>Planned</p>
-													</div>
-									
-													<div class="col-sm-2 post-comments">
-														<p><i class="fa fa-comments-o"></i> 100</p>
-													</div>
-									
-												</div>
-									</a>
-											</div>
-										</div>
 								  
 										<div id="topalltimetab" class="tab-pane fade">
 								   
 									
 									
 											<div class="post">
-											<a href="Theidea.html">
-												<div class="row post-body">
-													<div class="col-sm-9">
-														<h4>The Best Investment</h4>
+												<a href="javascript:;" class="openPostDetails">
+													<div class="row post-body">
+														<div class="col-sm-9">
+															<h4>The Best Investment</h4>
+														</div>
+									
+														<div class="col-sm-3">
+															<h4>10000 Votes</h4>
+														</div>
+									
+														<div class="col-sm-12">
+															Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+														</div>
 													</div>
 									
-													<div class="col-sm-3">
-														<h4>10000 Votes</h4>
-													</div>
+													<div class="row post-footer">
+														<div class="col-sm-5 post-created">
+															<p><i class="fa fa-user"></i> Created 10 Days Ago By <span>Charles Chris</span></p>
+														</div>
 									
-													<div class="col-sm-12">
-														Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+									
+														<div class="col-sm-3 post-status">
+															<p>Planned</p>
+														</div>
+									
+														<div class="col-sm-2 post-comments">
+															<p><i class="fa fa-comments-o"></i> 100</p>
+														</div>
+														
+														<div class="col-sm-2">
+														<button class="btn btn-primary post-detailsButton">Details</button>
+														</div>
+									
 													</div>
+												</a>
+												
+												<div class="row post-details">
+												
+													<div class="col-sm-12 teamresponse">
+													<div class="col-sm-6">
+													<h4>Team Response</h4>
+													</div>
+													
+													<div class="col-sm-3 col-sm-offset-3">
+													<h4>22-04-2018</h4>
+													</div>
+														<p >
+															Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+
+														</p>
+										
+													</div>
+										
+										
+													<ul class="nav nav-tabs">
+														<li class="active"><h5 data-toggle="tab" href="#commentstab6" aria-expanded="false">Comments (<span class="numberOfCommentsonPost">2</span>)</h5></li>
+								
+														<li><h5 data-toggle="tab" href="#votestab6" aria-expanded="false">Votes (12)</h5></li>
+								
+														<li><h5 data-toggle="tab" href="#topalltimetab6" aria-expanded="false">Top All Time (2)</h5></li>
+								
+													</ul>
+											
+													<div class="tab-content" style="margin-top: 25px;">
+														<div id="commentstab6" class="tab-pane fade active in">
+															<div class="col-sm-12">
+																<div class="media">
+																	<div class="media-left">
+																		<a href="#">
+																			<img class="media-object" alt="" src="assets/img/avatar1.jpg"> </a>
+																	</div>
+																	<div class="media-body">
+																		<h4 class="media-heading">
+																			<small class="text-muted">Mike Morroe commented on 25 December 2015, 9:40PM</small>
+																		</h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen boo</div>
+																</div>
+                                                        
+																<div class="media">
+																	<div class="media-left">
+																		<a href="#">
+																			<img class="media-object" alt="" src="assets/img/avatar6.jpg"> </a>
+																	</div>
+																	<div class="media-body">
+																		<h4 class="media-heading">
+																			<small class="text-muted">Jane Khan commented on 30 May 2015, 9:40PM</small>
+																		</h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen boo</div>
+																</div>
+                                                        
+																<div class="row" style="
+    margin-top:  25px;
+    padding:  7px;
+">
+																	<div class="form-group form-md-line-input form-md-floating-label">
+																		<input type="text" class="form-control replyfield" placeholder="Comment...">
+																	</div>
+    
+																	<button class="btn btn-link waves-effect waves-light" style="float: left;padding:  12px;background-color: #F0F0F0;">Attach File</button>
+																	<button class="btn btn-primary commentonpost waves-effect waves-light" style="padding: 12px;float: right;">Comment</button>
+   
+    
+																</div>
+                                                        
+															</div>
+														</div>
+										
+														<div id="votestab6" class="tab-pane fade">
+															<div class="col-sm-12">
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+											
+															</div>
+														</div>
+										
+														<div id="topalltimetab6" class="tab-pane fade">
+															<div class="col-sm-12">
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar6.jpg" title="Jane"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+																<a href="#"><img src="assets/img/avatar1.jpg" title="Michale"></a>
+															</div>
+														</div>
+										
+										
+										
+													</div>
+												
 												</div>
-									
-												<div class="row post-footer">
-													<div class="col-sm-7 post-created">
-														<p><i class="fa fa-user"></i> Created 10 Days Ago By <span>Charles Chris</span></p>
-													</div>
-									
-									
-													<div class="col-sm-3 post-status">
-														<p>Planned</p>
-													</div>
-									
-													<div class="col-sm-2 post-comments">
-														<p><i class="fa fa-comments-o"></i> 100</p>
-													</div>
-									
-												</div>
-									          </a>
 											</div>
                                     								 
 										</div>
@@ -1337,6 +1861,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		ga('create','UA-XXXXX-X','auto');ga('send','pageview');
 		</script>
 		-->
+		
+		<script>
+		$(".openPostDetails").click(function(){
+		   $(this).closest(".post").find(".post-details").slideToggle();	
+		});
+		
+		
+		
+		$('.commentonpost').click(function(){
+			var reply = $(this).closest(".row").find(".replyfield").val().trim();
+		
+			if (reply!="") 
+			  {
+			    $(this).closest(".post").find(".media:last").after('<div class="media"><div class="media-left"><a href="#"><img class="media-object" alt="" src="assets/img/avatar6.jpg"></a></div><div class="media-body"><h4 class="media-heading"><small class="text-muted">Jane Khan Commented On 30 May 2017, 9:40PM</small></h4>'+reply+'</div></div>');
+			    $(this).closest(".post").find(".replyfield").val("");
+			    
+			    var number = parseInt($(this).closest(".post").find(".numberOfCommentsonPost").html());
+			    number++;
+			    $(this).closest(".post").find(".numberOfCommentsonPost").html(number);
+			    
+			  }	
+			});
+		
+		
+		</script>
 
 	</body>
 

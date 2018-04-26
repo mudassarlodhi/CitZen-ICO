@@ -12,7 +12,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CitZen- Community</title>
+    <title>CitZen- Forums</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
@@ -46,7 +46,8 @@
 
     <style>
         .is-site-bg-img .site-bg-img {
-            background-image: url(assets/img/community.jpg) !important;
+            background-image: url(assets/img/Discussion.png) !important;
+            opacity: 1;
         }
 
 
@@ -233,7 +234,7 @@
         }
 
         #home {
-            height: 100px;
+            height: 550px;
         }
 
 
@@ -358,7 +359,8 @@
         }
         .promo
         {
-        	margin-top:55px;
+        	margin-top: 17px;
+    		margin-bottom: 25px;
         }
         .promo img
         {
@@ -366,25 +368,55 @@
         }
         .site-bg-overlay
         {
-        	background-color: rgba(0, 0, 0, 0.03) !important;
+        	background-color: transparent !important;
         }
-        
-        #navbar-largescreen
+        .forumtable tbody td
         {
-        	background-color: white !important;
+        	padding-top: 18px !important;
+        	padding-bottom: 15px !important;
         }
-         #navbar-largescreen li a 
+         .forumtable tbody td:nth-child(2)
          {
-         	color:black;
+         	font-size:18px; 
          }
-          #navbar-largescreen li:active a , .global-active a
+         .forumtable tbody tr td:nth-child(1)
+         {
+         	text-align: center !important; 
+         }
+          .forumtable tbody td i
           {
-          	color:black !important;
-          } 
-          .otherPagesLink 
-          {
-		    background-color: rgba(0, 0, 0, 0.1);
+          	font-size: 2em !important;
+          	color:#353535;
           }
+          .forumtable tbody a:hover
+          {
+          	text-decoration: underline !important;
+          }
+          .forumtable thead th
+          {
+          	font-weight: 500;
+          }
+          .authorstable tr td:nth-child(1) img
+          {
+          	width: 30px;
+          	height: 30px;
+          }
+          
+          
+           #navbar-largescreen
+	        {
+	        	background-color:#59A1C7  !important;
+	        }
+	     
+	     .otherPagesLink
+	     {
+	     	background-color: rgba(0, 0, 0, 0.1);
+	     }
+          
+          
+          
+          
+          
     </style>
 </head>
 
@@ -430,7 +462,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								</button>
 								<div class="navbar-brand-wrap">
 									<a class="navbar-brand" href="#">
-										<img src="assets/img/logo2.png" alt="CitZen Logo" style="margin-top:40px; margin-left:2em; max-height:55px;">
+										<img src="assets/img/logo1.png" alt="CitZen Logo" style="margin-top:40px; margin-left:2em; max-height:55px;">
 									</a>
 								</div>
 							</div> <!-- .navbar-header -->
@@ -457,7 +489,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									<li><button class="btn btn-primary" style="padding: 6px;">Submit an idea</button></li>
 									<li><a href="#">Login</a></li>
 									<li><a href="#">Support</a></li>
-									<li class="active"><a href="#home">Community</a></li>	
+										<li><a href="community.html">Community</a></li>	
 									<li><a href="#">Challenges</a></li>
 									<li><a href="communityForums.html">Co-Enable</a></li>
 									<li><a href="co-ideas.html">Co-idea</a></li>
@@ -526,11 +558,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</header> <!-- .site-header -->
             <!-- .site-header -->
             <main class="site-main">
-                <div id="home" class="section block-primary position-r align-c-xs-max">
+                <div id="home" class="section block-primary position-r align-c-xs-max" style="background-color: white !important; ">
                     <div id="particles-js" class="site-bg">
                         <div class="site-bg-img"></div>
 
-                        <div class="site-bg-overlay" style="background-color: rgba(0, 0, 0, 0.4);"></div>
+                        <div class="site-bg-overlay" style="background-color: transparent !important;"></div>
 
 
                         <canvas class="particles-js-canvas-el" width="1349" height="500" style="width: 100%; height: 100%;"></canvas></div>
@@ -539,10 +571,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-6">
-                                <div class="col-inner" data-sr="left" data-sr-id="3" style="; visibility: visible;  -webkit-transform: translateX(0); opacity: 1;transform: translateX(0); opacity: 1;-webkit-transition: -webkit-transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; transition: transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; ">
+                                <div class="col-inner" data-sr="left" data-sr-id="3" style="background-color: rgba(0,0,0,0.4);padding: 0px 12px;border-radius: 11px; visibility: visible;  -webkit-transform: translateX(0); opacity: 1;transform: translateX(0); opacity: 1;-webkit-transition: -webkit-transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; transition: transform 0.8s ease-in-out 0s, opacity 0.8s ease-in-out 0s; ">
                                     <div class="section-heading">
                                         <h5>CitZen</h5>
-                                        <h1>Community</h1>
+                                        <h1>Community Forums</h1>
 
                                     </div>
                                     <!-- .section-heading -->
@@ -573,93 +605,87 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <div class="col-sm-8">
                                         <div class="col-inner">
                                             <div class="section-heading">
-                                                <h5>CitZen Community</h5>
-                                                <h2>Creating Pathways to Opportunity</h2>
+                                                <h2>Forums</h2>
                                                 
                                                 
-                                            <iframe width="100%" height="315"src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-                                                <p style="margin-bottom: 15px;">From the neighborhoods where our stores are located to those where our coffee is grown, we are committed to creating and investing in opportunities for people around the world.
-</p>
-
-<p>
-	Bringing people together, helping provide education and employment opportunities and making a difference in 
-people's lives – it's all part of being a good neighbor and a sustainable company. Starbucks, even as a public company, has always believed that we can balance profitability and a social conscience.
-</p>
+                                           
                                             </div>
                                             <!-- .section-heading -->
                                             <div class="section-content">
+                                            <div class="Forum">
+                                            <table class="table table-responsive forumtable">
+                                             <thead>
+								             <tr>
+								              <th></th>
+								              <th>Title</th>
+								              <th>Topics</th>
+								              <th>Last Post</th>
+								             </tr>
+								             </thead>
+                                            <tbody>
+                                            <tr>
+                                            <td><i class="fa fa-user"></i></td>
+                                            <td><a href="communityForumQuestionList.html">CitZen Community Basics</a></td>
+                                            <td>2842</td>
+                                            <td>2 d ago</td>
+                                            </tr>
                                             
+                                            
+                                            <tr>
+                                            <td><i class="fa fa-newspaper-o"></i></td>
+                                            <td><a href="communityForumQuestionList.html">News & Announcements</a></td>
+                                            <td>4173</td>
+                                            <td>4 d ago</td>
+                                            </tr>
+                                            
+                                            
+                                             <tr>
+                                            <td><i class="fa fa-apple"></i></td>
+                                            <td><a href="communityForumQuestionList.html">iOS App</a></td>
+                                            <td>69485</td>
+                                            <td>2 h ago</td>
+                                            </tr>
+                                            
+                                            
+                                              <tr>
+                                            <td><i class="fa fa-android"></i></td>
+                                            <td><a href="communityForumQuestionList.html">Android App</a></td>
+                                            <td>69485</td>
+                                            <td>7 m ago</td>
+                                            </tr>
+                                            
+                                            
+                                             <tr>
+                                            <td><i class="fa fa-dashboard"></i></td>
+                                            <td><a href="communityForumQuestionList.html">CitZen Dashboard</a></td>
+                                            <td>69486</td>
+                                            <td>2 m ago</td>
+                                            </tr>
+                                            
+                                            
+                                             <tr>
+                                            <td><i class="fa fa-globe"></i></td>
+                                            <td><a href="communityForumQuestionList.html">Web API Development</a></td>
+                                            <td>8362</td>
+                                            <td>4 h ago</td>
+                                            </tr>
+                                            
+                                            
+                                             <tr>
+                                            <td><i class="fa fa-star"></i></td>
+                                            <td><a href="communityForumQuestionList.html">Challenges</a></td>
+                                            <td>771</td>
+                                            <td>3 h ago</td>
+                                            </tr>
+                                            
+                                            
+                                            </tbody>
+                                            
+                                            </table>
+                                            
+                                            </div>
 
-                                                <div class="panel-group">
-                                                    <div class="row community">
-                                                        <div class="col-sm-12 col-md-6">
-
-                                                            <div class="panel panel-default m_bottom_25">
-                                                                <div class="panel-heading">
-                                                                    <span class="bold"> Community Services</span>
-                                                                </div>
-                                                                <div class="panel-body">
-                                                                    <img class="fakeimg" src="assets/img/service-community.jpg" />
-
-                                                                    <p>Lorem ipsum dolor sit amet, purus in lectus convallis in vestibulum, justo tempus bibendum vestibulum praesent, dui ante porttitor tempus mauris laoreet, nulla litora magna. Nostra enim. Augue pharetra et, tempus urna.
-
-                                                                    </p>
-                                                                </div>
-                                                                <div class="panel-footer">
-                                                                    
-                                                                    <small class="pull-right"> <a href="community-services.html">More <i class="fa fa-chevron-right"></i> </a>  </small>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                        
-                                                         <div class="col-sm-12 col-md-6">
-
-                                                            <div class="panel panel-default m_bottom_25">
-                                                                <div class="panel-heading">
-                                                                    <span class="bold"> CitZen Foundation</span>
-                                                                </div>
-                                                                <div class="panel-body">
-                                                                    <img class="fakeimg" src="assets/img/foundation-community.jpg" />
-
-                                                                    <p>Lorem ipsum dolor sit amet, purus in lectus convallis in vestibulum, justo tempus bibendum vestibulum praesent, dui ante porttitor tempus mauris laoreet, nulla litora magna. Nostra enim. Augue pharetra et, tempus urna.
-
-                                                                    </p>
-                                                                </div>
-                                                                <div class="panel-footer" >
-                                                                   
-                                                                    <small class="pull-right"> <a href="community-services.html">More <i class="fa fa-chevron-right"></i> </a>  </small>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-
-                                                       <div class="col-sm-12 col-md-6">
-
-                                                            <div class="panel panel-default m_bottom_25">
-                                                                <div class="panel-heading">
-                                                                    <span class="bold">Diversity & Inclusion</span>
-                                                                </div>
-                                                                <div class="panel-body">
-                                                                    <img class="fakeimg" src="assets/img/diversity-community.jpg" />
-
-                                                                    <p>Lorem ipsum dolor sit amet, purus in lectus convallis in vestibulum, justo tempus bibendum vestibulum praesent, dui ante porttitor tempus mauris laoreet, nulla litora magna. Nostra enim. Augue pharetra et, tempus urna.
-
-                                                                    </p>
-                                                                </div>
-                                                               <div class="panel-footer">
-                                                                   
-                                                                    <small class="pull-right"> <a href="community-services.html">More <i class="fa fa-chevron-right"></i> </a>  </small>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-
-
-                                                <!--                                        <a class="btn btn-primary m-y-5" href="https://brendaneich.com/">More Details</a>-->
+                                            
                                             </div>
                                             <!-- .section-content -->
                                         </div>
@@ -668,11 +694,91 @@ people's lives – it's all part of being a good neighbor and a sustainable comp
                                     <!--        Filter and Search Right                    -->
                                     <div class="col-sm-4 m-t-60-xs-max p-l-60-md-min">
                                     <div class="row">
-                                    <div class="col-sm-12 promo"><h5 class="heading_promo">Join Our Community</h5><a href="index.html"><img alt="Know More About CitZen" src="assets/img/story.jpg"></a>Join a community service project in your neighborhood. <a href="index.html">See what we're doing</a>.</div>
-
-
-<div class="col-sm-12 promo"><h5 class="heading_promo">CitZen Guidelines</h5><a href="index.html"><img alt="Know More About CitZen" src="assets/img/citzen1.png"></a>
-Get To Know our guidelines. <a href="index.html">See what we are the rules</a>.</div>
+                                    <div class="col-sm-12 promo">
+                                    <div class="row">
+                                    <h5> Most Helpful Authors </h5>
+                                    <table class="table table-responsive authorstable">
+                                    <tbody>
+                                    <tr>
+                                    <td><img src="assets/img/avatar1.jpg"></td>
+                                    <td><a href="javascript:;">Wendy B</a></td>
+                                    <td><i class="fa fa-thumbs-up"></i> 599</td>		
+                                    </tr>
+                                    
+                                    
+                                    <tr>
+                                    <td><img src="assets/img/avatar5.png"></td>
+                                    <td><a href="javascript:;">NellyG</a></td>
+                                    <td><i class="fa fa-thumbs-up"></i> 400</td>		
+                                    </tr>
+                                    
+                                    
+                                    <tr>
+                                    <td><img src="assets/img/avatar6.jpg"></td>
+                                    <td><a href="javascript:;">Steve</a></td>
+                                    <td><i class="fa fa-thumbs-up"></i> 340</td>		
+                                    </tr>	
+                                    
+                                    
+                                    <tr>
+                                    <td><img src="assets/img/avatar1.jpg"></td>
+                                    <td><a href="javascript:;">Adam</a></td>
+                                    <td><i class="fa fa-thumbs-up"></i> 300</td>		
+                                    </tr>
+                                    	
+                                    </tbody>
+                                    
+                                    
+                                    </table>
+                                    
+                                    </div>
+                                    	
+                                    	
+                                    </div>
+                                    
+                                    
+                                    
+                                    <div class="col-sm-12 promo">
+                                    <div class="row">
+                                    <h5> Top Solutions Authors </h5>
+                                    <table class="table table-responsive authorstable">
+                                    <tbody>
+                                    <tr>
+                                    <td><img src="assets/img/avatar1.jpg"></td>
+                                    <td><a href="javascript:;">Wendy B</a></td>
+                                    <td>60</td>		
+                                    </tr>
+                                    
+                                    
+                                    <tr>
+                                    <td><img src="assets/img/avatar5.png"></td>
+                                    <td><a href="javascript:;">NellyG</a></td>
+                                    <td>70</td>		
+                                    </tr>
+                                    
+                                    
+                                    <tr>
+                                    <td><img src="assets/img/avatar6.jpg"></td>
+                                    <td><a href="javascript:;">Steve</a></td>
+                                    <td>200</td>		
+                                    </tr>	
+                                    
+                                    
+                                    <tr>
+                                    <td><img src="assets/img/avatar1.jpg"></td>
+                                    <td><a href="javascript:;">Adam</a></td>
+                                    <td>20</td>		
+                                    </tr>
+                                    	
+                                    </tbody>
+                                    
+                                    
+                                    </table>
+                                    
+                                    </div>
+                                    	
+                                    	
+                                    </div>
                                     
                                     </div>
 
